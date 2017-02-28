@@ -5,3 +5,5 @@ ffmpeg -i E:/input/a.wmv -ab 128 -acodec libmp3lame -ac 1 -ar 22050 -r 29.97 -qs
 
 低品质:
 ffmpeg -i E:/input/a.wmv -ab 128 -acodec libmp3lame -ac 1 -ar 22050 -r 29.97 -b 512 -y E:/output/low.flv
+
+可利用CkPlayer播放器集成页面播放
