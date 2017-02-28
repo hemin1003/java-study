@@ -79,6 +79,8 @@ public class ChangeVideo {
 			return 0;
 		} else if (type.equals("mov")) {
 			return 0;
+		} else if (type.equals("mp4")) {
+			return 0;
 		} else if (type.equals("mp3")) {
 			return 0;
 		} else if (type.equals("asf")) {
