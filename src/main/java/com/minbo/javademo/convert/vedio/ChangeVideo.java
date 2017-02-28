@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * 
- * @author HEMIN
+ * @author Minbo
  *
  */
 public class ChangeVideo {
