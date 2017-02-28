@@ -14,6 +14,7 @@ import java.util.List;
  *
  */
 public class ChangeVideo {
+	
 	public static void main(String[] args) {
 		ChangeVideo.convert("C:\\test\\c.mp3", "C:\\test\\c.flv");
 	}
@@ -96,6 +97,7 @@ public class ChangeVideo {
 		}
 		return 9;
 	}
+	
 	// ffmpeg能解析的格式：（asx，asf，mpg，wmv，3gp，mp4，mov，avi，flv等）直接转换为目标视频
 	private static boolean processFLV(String inputFile, String outputFile) {
 		if (!checkfile(inputFile)) {
