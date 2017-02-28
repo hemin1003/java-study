@@ -2,7 +2,7 @@ package com.minbo.javademo.convert.vedio;
 
 /**
  * 
- * @author HEMIN
+ * @author Minbo
  *
  */
 public class Constants {
