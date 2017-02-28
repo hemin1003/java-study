@@ -16,7 +16,7 @@ import java.util.List;
 public class ChangeVideo {
 	
 	public static void main(String[] args) {
-		ChangeVideo.convert("C:\\test\\c.mp3", "C:\\test\\c.flv");
+		ChangeVideo.convert("C:\\test\\a.mp4", "C:\\test\\c.flv");
 	}
 
 	/**
