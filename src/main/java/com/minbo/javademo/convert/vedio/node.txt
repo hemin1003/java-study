@@ -1,0 +1,7 @@
+ffmpeg输出视频的品质
+
+高品质:
+ffmpeg -i E:/input/a.wmv -ab 128 -acodec libmp3lame -ac 1 -ar 22050 -r 29.97 -qscale 6 -y E:/output/a.flv
+
+低品质:
+ffmpeg -i E:/input/a.wmv -ab 128 -acodec libmp3lame -ac 1 -ar 22050 -r 29.97 -b 512 -y E:/output/low.flv
