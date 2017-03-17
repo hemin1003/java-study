@@ -1,6 +1,7 @@
 package com.minbo.javademo.file;
 
 import java.io.BufferedReader;
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
@@ -144,6 +145,7 @@ public class ReadFromFile {
 			// 一次读一个字节
 			in = new FileInputStream(file);
 			int tempbyte;
+			//ByteArrayOutputStream os = new ByteArrayOutputStream();
 			while ((tempbyte = in.read()) != -1) {
 				System.out.println(tempbyte);
 			}
