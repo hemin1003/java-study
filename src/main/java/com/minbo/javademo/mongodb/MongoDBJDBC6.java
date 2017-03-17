@@ -11,7 +11,6 @@ import com.mongodb.client.MongoDatabase;
 /**
  * query用法
  */
-
 public class MongoDBJDBC6 {
 
 	public static void main(String[] args) {

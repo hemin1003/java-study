@@ -9,6 +9,9 @@ import com.mongodb.client.MongoCursor;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.model.Filters;
 
+/**
+ * delete用法
+ */
 public class MongoDBJDBC8 {
 
 	public static void main(String[] args) {
