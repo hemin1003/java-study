@@ -14,6 +14,7 @@ import com.mongodb.client.MongoDatabase;
 public class MongoDBJDBC2 {
 
 	public static void main(String[] args){  
+		
         try {  
             //连接到MongoDB服务 如果是远程连接可以替换“localhost”为服务器所在IP地址  
             //ServerAddress()两个参数分别为 服务器地址 和 端口  
