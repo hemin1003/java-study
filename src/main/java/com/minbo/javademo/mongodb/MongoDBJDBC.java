@@ -16,7 +16,7 @@ public class MongoDBJDBC {
 			// 连接到数据库
 			MongoDatabase mongoDatabase = mongoClient.getDatabase("test");
 			System.out.println("Connect to database successfully");
-
+			
 		} catch (Exception e) {
 			System.err.println(e.getClass().getName() + ": " + e.getMessage());
 		}
