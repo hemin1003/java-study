@@ -22,24 +22,29 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-        <groupId>org.mongodb</groupId>
-        <artifactId>mongodb-driver</artifactId>
-        <version>3.4.2</version>
-    </dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongodb-driver</artifactId>
+			<version>3.4.2</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.41</version>
+		</dependency>
 	</dependencies>
-	
-	 <reporting>  
-        <plugins>  
-            <plugin>  
-                <groupId>org.codehaus.mojo</groupId>  
-                <artifactId>findbugs-maven-plugin</artifactId>  
-                <version>2.5.1</version>  
-                <configuration>  
-                    <xmlOutput>true</xmlOutput>  
-                    <effort>Max</effort>  
-                </configuration>  
-            </plugin>  
-        </plugins>  
-    </reporting>  
+
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>2.5.1</version>
+				<configuration>
+					<xmlOutput>true</xmlOutput>
+					<effort>Max</effort>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
 
 </project>
