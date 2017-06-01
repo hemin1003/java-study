@@ -20,7 +20,9 @@ public class Test4 {
 		System.out.println(Test4.bytes2HexString(b2));
 	}
 
-	//将byte[]转化十六进制的字符串
+	/**
+	 * 将byte[]转化十六进制的字符串
+	 */
 	public static String bytes2HexString(byte[] b) {
 		String ret = "";
 		for (int i = 0; i < b.length; i++) {
