@@ -4,8 +4,10 @@ public class App7
 {
     public static void main( String[] args )
     {
-        new test("zhangsan").start();
-        new test("wangwu").start();
+//        new test("zhangsan").start();
+//        new test("wangwu").start();
+    	 new test("zhangsan").run();
+         new test("wangwu").run();
     }
     
     //有没有可能出现交叉打印？
