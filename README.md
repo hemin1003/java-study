@@ -10,4 +10,4 @@ JAVA8一些新特性新功能，
 
 比如Lambda表达式用法，Steam API用法等
 
-ELK集成（博客地址：http://blog.csdn.net/hemin1003/article/details/73295303）
+ELK集成~博客地址：http://blog.csdn.net/hemin1003/article/details/73295303
