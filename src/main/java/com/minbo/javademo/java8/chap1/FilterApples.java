@@ -7,7 +7,7 @@ import java.util.function.Predicate;
 public class FilterApples {
 
 	public static void main(String[] args) {
-		List<Apple> inventory = new ArrayList<>();
+		List<Apple> inventory = new ArrayList<Apple>();
 		inventory.add(new Apple("red", 100));
 		inventory.add(new Apple("green", 90));
 		inventory.add(new Apple("yellow", 160));
@@ -39,7 +39,7 @@ public class FilterApples {
 	}
 	
 	public static List<Apple> filterGreenApple(List<Apple> inventory){
-		List<Apple> result = new ArrayList<>();
+		List<Apple> result = new ArrayList<Apple>();
 		for (Apple apple : inventory) {
 			if("green".equals(apple.getColor())){
 				result.add(apple);
@@ -49,7 +49,7 @@ public class FilterApples {
 	}
 	
 	public static List<Apple> filterHeavyApple(List<Apple> inventory){
-		List<Apple> result = new ArrayList<>();
+		List<Apple> result = new ArrayList<Apple>();
 		for (Apple apple : inventory) {
 			if(apple.getWeight() > 150){
 				result.add(apple);
@@ -60,7 +60,7 @@ public class FilterApples {
 	
 	//JAVA8通过把条件代码作为参数传递进去，避免Filter方法出现重复的代码
 	public static <T> List<T> filterApples(List<T> inventory, Predicate<T> p){
-		List<T> result = new ArrayList<>();
+		List<T> result = new ArrayList<T>();
 		for (T e : inventory) {
 			if(p.test(e)){ 
 				result.add(e);

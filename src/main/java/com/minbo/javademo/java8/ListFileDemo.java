@@ -10,7 +10,6 @@ public class ListFileDemo {
 	public static void main(String[] args) {
 		//之前的写法
 		File[] files = new File("E:\\kankan").listFiles(new FileFilter() {
-			@Override
 			public boolean accept(File file) {
 				return file.isHidden();
 			}
