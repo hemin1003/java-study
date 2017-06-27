@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 public class Test {
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
-		//设置hadoop安装路径
+		//设置hadoop安装路径，如果配置了环境变量则不需要了
 		System.setProperty("hadoop.home.dir", "F:\\hadoop\\hadoop-2.7.3");
 		
 		// 显示目录下所有文件
