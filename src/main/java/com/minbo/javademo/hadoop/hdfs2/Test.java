@@ -1,4 +1,4 @@
-package com.minbo.javademo.hdfs2;
+package com.minbo.javademo.hadoop.hdfs2;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
