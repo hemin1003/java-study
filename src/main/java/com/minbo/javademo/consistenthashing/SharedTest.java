@@ -26,7 +26,6 @@ public class SharedTest {
 		// 线程池起了1000个线程，每个线程hash10000次，模拟一万次数据hash
 		for (int j = 0; j < 1000; j++) {
 			es.execute(new Runnable() {
-				@Override
 				public void run() {
 					// Random rd = new Random(1100);
 					for (int k = 0; k < 10000; k++) {
