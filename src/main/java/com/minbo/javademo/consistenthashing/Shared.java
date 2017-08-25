@@ -50,7 +50,6 @@ public class Shared<T> {
 	@SuppressWarnings("unchecked")
 	public T getNode(String key) {
 		Long hashedKey = hash(key);
-		// TODO judge null
 		Entry en = virtualNodes.ceilingEntry(hashedKey);
 		if (en == null) {
 			return (T) virtualNodes.firstEntry().getValue();

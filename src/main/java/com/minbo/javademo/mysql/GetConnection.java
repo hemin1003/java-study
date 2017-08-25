@@ -15,11 +15,11 @@ public class GetConnection {
 			e1.printStackTrace();
 		}
 
-		String url = "jdbc:mysql://192.168.0.104:3316/aylson_dc_v1?useUnicode=true&autoReconnect=true&allowMultiQueries=true"; // JDBC的URL
+		String url = "jdbc:mysql://192.168.56.101:3306/cfdb?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&allowMultiQueries=true"; // JDBC的URL
 		// 调用DriverManager对象的getConnection()方法，获得一个Connection对象
 		Connection conn;
 		try {
-			conn = DriverManager.getConnection(url, "root", "Aylson");
+			conn = DriverManager.getConnection(url, "root", "123456");
 			// 创建一个Statement对象
 			Statement stmt = conn.createStatement(); // 创建Statement对象
 			System.out.print("成功连接到数据库！");

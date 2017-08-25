@@ -12,7 +12,6 @@ public class TestEsClient {
 	
 	public static void main(String[] args) {
 		try {
-//			String ip = "182.92.82.188";
 			String ip = "192.168.56.101";
 			// 设置集群名称
 			Settings settings = Settings.builder().put("cluster.name", "elasticsearch").build();
