@@ -31,7 +31,7 @@ public class TestEsAddData {
 			// 2. 添加索引数据
 			XContentBuilder doc = XContentFactory.jsonBuilder()
 					.startObject()
-						.field("title", "this is " + name)
+						.field("title", "Kevin this Thompson, Kevin is Thompson")
 						.field("description", "descript " + name)
 						.field("price", new Random().nextInt(100))
 						.field("onSale", new Random().nextInt(10) > 5 ? true : false)

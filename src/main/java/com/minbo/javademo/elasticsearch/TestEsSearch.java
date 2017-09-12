@@ -1,14 +1,17 @@
 package com.minbo.javademo.elasticsearch;
 
+import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 import static org.elasticsearch.index.query.QueryBuilders.termQuery;
 
 import java.io.IOException;
 import java.net.InetAddress;
 
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
+import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHits;
@@ -38,25 +41,37 @@ public class TestEsSearch {
                 ;  
 		
         //过滤查询搜索
-        QueryBuilder qb3 = QueryBuilders.rangeQuery("price")
-        		.from(12).to(80);
+//        QueryBuilder qb3 = QueryBuilders.rangeQuery("price")
+//        		.from(12).to(80);
+//        
+//        int size = 10;
+//		int from = 0;
+//		//默认返回数据为10条
+//		SearchResponse response = client.prepareSearch("productindex")
+//		        .setQuery(qb3) 	// Query
+//		        .setFrom(from).setSize(size).setExplain(true)     
+//		        .execute()     
+//		        .actionGet(); 
         
-		int size = 10;
-		int from = 0 + size;
-		//默认返回数据为10条
-		SearchResponse response = client.prepareSearch("productindex")
-		        .setQuery(qb3) 	// Query
-		        .setFrom(from).setSize(size).setExplain(true)     
-		        .execute()     
-		        .actionGet(); 
-		
+        MoreLikeThisQueryBuilder.Item[] items = {new MoreLikeThisQueryBuilder.Item("productindex", "productType", "6C29B927483115E5A4CC1D31D77869")};
+        String[] fileds = {"title"};
+        SearchResponse response = client.prepareSearch("productindex")
+                .setTypes("productType")
+                .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
+                .setQuery(moreLikeThisQuery(fileds, null, items)
+                        .minTermFreq(1)
+                        .maxQueryTerms(15))
+                .setSize(10).setFrom(0)
+                .execute()
+                .actionGet();
+        
 		SearchHits hits = response.getHits();  
 		System.out.println("总符合记录数：count=" + hits.getTotalHits());
-		for (int i = 0; i < size; i++) {
+		for (int i = 0; i < 10; i++) {
 //			System.out.println("----------------------");
 //			System.out.println("Index="+hits.getAt(i).getIndex());
 //			System.out.println("Type="+hits.getAt(i).getType());
-//			System.out.println("Id="+hits.getAt(i).getId());
+			System.out.println("Id="+hits.getAt(i).getId());
 //			System.out.println("Version="+hits.getAt(i).getVersion());
 			System.out.println("============content============，i=" + (i+1));
 			System.out.println("title="+hits.getAt(i).getSource().get("title"));
