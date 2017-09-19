@@ -109,8 +109,25 @@
             <artifactId>log4j-core</artifactId>
             <version>2.7</version>
         </dependency>
+        <dependency>
+			<groupId>com.hankcs</groupId>
+			<artifactId>hanlp</artifactId>
+			<version>portable-1.2.9</version>
+		</dependency>
+		<dependency>
+	        <groupId>org.nlpcn</groupId>
+	        <artifactId>nlp-lang</artifactId>
+	        <version>1.7</version>
+	    </dependency>
 	</dependencies>
-
+	
+	<repositories>
+	    <repository>
+	        <id>mvn-repo</id>
+	        <url>http://maven.nlpcn.org/</url>
+	    </repository>
+	</repositories>
+	
 	<reporting>
 		<plugins>
 			<plugin>

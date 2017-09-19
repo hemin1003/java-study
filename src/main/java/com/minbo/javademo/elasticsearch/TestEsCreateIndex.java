@@ -15,15 +15,13 @@ import org.elasticsearch.transport.client.PreBuiltTransportClient;
 public class TestEsCreateIndex {
 	
 	public static void main(String[] args) throws IOException {
-		String ip = "182.92.82.188";
-		
 		Settings settings = Settings.builder().put("cluster.name", "elasticsearch").build();
 		Client client = new PreBuiltTransportClient(settings)
-				.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(ip), 9300));
+				.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(GlobelUtils.IP), 9300));
 		
 		//1. 创建索引
 		//索引名称必须为小写
-		client.admin().indices().prepareCreate("productIndex").execute().actionGet();
+		client.admin().indices().prepareCreate("productindex").execute().actionGet();
 		
 		XContentBuilder mapping = XContentFactory.jsonBuilder()
 				.startObject()
@@ -40,6 +38,8 @@ public class TestEsCreateIndex {
 		client.admin().indices().putMapping(mappingRequest).actionGet();
 		
 		client.close();
+		
+		System.out.println("Done");
 		
 	}
 }

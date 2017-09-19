@@ -13,11 +13,9 @@ import org.elasticsearch.transport.client.PreBuiltTransportClient;
 public class TestEsDeleteIndex {
 	
 	public static void main(String[] args) throws IOException {
-		String ip = "182.92.82.188";
-		
 		Settings settings = Settings.builder().put("cluster.name", "elasticsearch").build();
 		Client client = new PreBuiltTransportClient(settings)
-				.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(ip), 9300));
+				.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(GlobelUtils.IP), 9300));
 
 		DeleteResponse response = client.prepareDelete("productindex", "productType", "2").execute().actionGet();
 		
