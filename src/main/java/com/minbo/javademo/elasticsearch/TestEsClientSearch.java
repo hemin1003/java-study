@@ -18,7 +18,7 @@ public class TestEsClientSearch {
 			TransportClient client = new PreBuiltTransportClient(settings)
 					.addTransportAddress(new InetSocketTransportAddress(InetAddress.getByName(GlobelUtils.IP), 9300));
 			// 搜索数据
-			GetResponse response = client.prepareGet("productindex", "productType", "5E1E20A77E0A15E567067951EA60DA")
+			GetResponse response = client.prepareGet("productindex", "productType", "1B9785D58C11F15E97BCAA2115F7F4")
 					.execute().actionGet();
 			// 输出结果
 			System.out.println(response.getSourceAsString());

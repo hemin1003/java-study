@@ -16,13 +16,15 @@ import org.elasticsearch.common.xcontent.XContentFactory;
 import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
+import com.minbo.javademo.elasticsearch.GlobelUtils;
 import com.minbo.javademo.elasticsearch.nlp.HANLPExtractor;
 import com.minbo.javademo.elasticsearch.nlp.NLPExtractor;
+import com.minbo.javademo.utils.UUID;
 
 public class TestEsAddData {
 
 	public static void main(String[] args) throws IOException {
-		String ip = "119.23.78.85";
+		String ip = GlobelUtils.IP;
 
 		Settings settings = Settings.builder().put("cluster.name", "elasticsearch").build();
 		Client client = new PreBuiltTransportClient(settings)
@@ -125,6 +127,7 @@ public class TestEsAddData {
 		
 		
 //		for (int i = 0; i < 100; i++) {
+			String id = UUID.getUUID();
 			System.out.println("=============================");
 			String name = getRandomEnglishName();
 			// 2. 添加索引数据
@@ -133,20 +136,22 @@ public class TestEsAddData {
 						.field("content", "This is content.")
 						.field("title", "这是一篇关于御风翱翔公司的苹果新闻哦")
 						.field("url", "www.xxx.url")
-						.field("domain", "society.qq.com")
-						.field("spiderUUID", "aa14fc39-6ff7-4a95-8024-b85d9935b23d")
-						.field("spiderInfoId", "AV6Tu-LtE7C-scy0W2kZ")
+						.field("domain", "news_society")
+						.field("spiderUUID", "aaaafc39-6ff7-4a95-8024-b85d99350001")
+						.field("spiderInfoId", "AV6ZI-TEE7C-scy0W2qu")
 						.field("gatherTime", "1491698100000")
 						.field("keywords", keywords)
 						.field("summary", summary)
-						.field("id", "5E1E20A77E0A15E567067951EA60DA")
+						.field("id", id)
 						.field("publishTime", "1491698100000")
 						.field("namedEntity", namedEntity)
 						.field("processTime", 20)
 					.endObject();
 
-			IndexResponse response = client.prepareIndex("commons", "webpage", "5E1E20A77E0A15E567067951EA60DA").setSource(doc)
+			IndexResponse response = client.prepareIndex("commons", "webpage", id).setSource(doc)
 					.execute().actionGet();
+			System.out.println("id = " + id);
+			
 			// Index name
 			String _index = response.getIndex();
 			System.out.println("_index = " + _index);

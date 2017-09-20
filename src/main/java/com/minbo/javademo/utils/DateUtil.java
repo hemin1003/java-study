@@ -402,13 +402,17 @@ public final class DateUtil {
 	/** 
      * 将时间转换为时间戳
      */    
-    public static String dateToStamp(String s) throws ParseException{
-        String res;
+    public static long dateToStamp(String s){
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date = simpleDateFormat.parse(s);
-        long ts = date.getTime();
-        res = String.valueOf(ts);
-        return res;
+        Date date;
+		try {
+			date = simpleDateFormat.parse(s);
+			long ts = date.getTime()/1000;
+	        return ts;
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+        return 0L;
     }
     
     /** 
@@ -418,7 +422,12 @@ public final class DateUtil {
         String result = null;  
         Date date = new Date(timeStamp * 1000);  
         SimpleDateFormat sd = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");  
-        result = sd.format(date);  
+        result = sd.format(date);
         return result;
     }
+    
+    public static void main(String[] args) throws ParseException {
+		System.out.println(dateToStamp(DateUtil.getCurrentLongDateTime()));
+		System.out.println(stampToDate(1505809405));
+	}
 }
