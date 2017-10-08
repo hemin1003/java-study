@@ -132,6 +132,11 @@ public class ToutiaoProcessor2 implements PageProcessor {
 				webPage.setDynamicFields(dynamicFields);
 				webPage.setProcessTime(cost);
 				
+				webPage.setContent("");
+				webPage.setKeywords(null);
+				webPage.setSummary(null);
+				webPage.setNamedEntity(null);
+				
 				logger.info("webPage=" + webPage.toString());
 				
 				try {
@@ -164,14 +169,14 @@ public class ToutiaoProcessor2 implements PageProcessor {
 		//1. 处理列表数据
 		System.out.println();
 		System.out.println("1. 处理列表数据...");
-		int count = 10;
+		int count = 1;
 		String [] strArray = new String [count];
 		for (int i = 0; i < count; i++) {
 			String url = "https://m.toutiao.com/list/?tag=" + tag + "&ac=wap&count=" + new java.util.Random().nextInt(20)
 					+ "&format=json_raw&as=A105392BB74C226&cp=59B78CE2C2868E1&max_behot_time=" + getStamp();
 			strArray[i] = url;
 			try {
-				Thread.sleep(300);
+				Thread.sleep(80);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
@@ -183,7 +188,7 @@ public class ToutiaoProcessor2 implements PageProcessor {
 		}
 		System.out.println("------------------");
 		System.out.println("开始爬虫网站....");
-		Spider.create(new ToutiaoProcessor2()).addUrl(strArray).thread(1).run();
+		Spider.create(new ToutiaoProcessor2()).addUrl(strArray).thread(5).run();
 		
 		//休眠三秒
 		System.out.println("休眠三秒");

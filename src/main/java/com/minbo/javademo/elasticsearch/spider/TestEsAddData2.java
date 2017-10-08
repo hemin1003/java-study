@@ -43,7 +43,7 @@ public class TestEsAddData2 {
 		}
 	}
 
-	private static final String HTML_PREFIX = "<!DOCTYPE html>\n" + "<html lang=\"en\">\n" + "    <head>\n"
+	public static final String HTML_PREFIX = "<!DOCTYPE html>\n" + "<html lang=\"en\">\n" + "    <head>\n"
 			+ "        <meta name=\"apple-mobile-web-app-capable\" content=\"yes\"></meta>\n"
 			+ "        <meta http-equiv=\"Cache-Control\" name=\"no-store\"></meta>\n"
 			+ "        <meta content=\"telephone=no\" name=\"format-detection\"></meta>\n"
@@ -61,66 +61,67 @@ public class TestEsAddData2 {
 			+ "            }\n" + "            img { height: auto; width: auto\\9; width:100%; }\n"
 			+ "        </style>\n" + "    </head>\n" + "<body> ";
 
-	private static final String HTML_SUFFIX = " </body></html>";
+	public static final String HTML_SUFFIX = " </body></html>";
 
 	public static boolean mainPage(Webpage webPage) throws IOException, ParseException {
 		
 		Webpage webPageTmp = ToutiaoProcessor3.getMainInfo(webPage.getId());
 		if(webPageTmp != null &&  null != webPageTmp.getContent()) {
-			System.out.println("已存在记录，跳过处理。webPageTmp = " + webPageTmp.toString());
+			System.out.println("已存在记录content，跳过处理。webPageTmp = " + webPageTmp.toString());
 			return false;
+		}else {
+			System.out.println("==============不存在content，添加索引数据===============");
+			// 2. 添加索引数据
+			XContentBuilder doc = XContentFactory.jsonBuilder()
+					.startObject()
+						.field("title", webPage.getTitle())
+						.field("url", webPage.getUrl())
+						.field("domain", webPage.getDomain())
+						.field("spiderUUID", webPage.getSpiderUUID())
+						.field("spiderInfoId", webPage.getSpiderInfoId())
+						.field("category", webPage.getCategory())
+						.field("gatherTime", webPage.getGathertime())
+						.field("id", webPage.getId())
+						.field("publishTime", webPage.getPublishTime())
+						.field("dynamicFields", webPage.getDynamicFields())
+						.field("processTime", webPage.getProcessTime())
+
+						 .field("content", HTML_PREFIX + webPage.getContent() + HTML_SUFFIX)
+						 .field("keywords", webPage.getKeywords())
+						 .field("summary", webPage.getSummary())
+						 .field("namedEntity", webPage.getNamedEntity())
+					.endObject();
+
+			IndexResponse response = client.prepareIndex("commons", "webpage", webPage.getId()).setSource(doc).execute()
+					.actionGet();
+			System.out.println("id = " + webPage.getId());
+
+			// Index name
+			String _index = response.getIndex();
+			System.out.println("_index = " + _index);
+
+			// Type name
+			String _type = response.getType();
+			System.out.println("_type = " + _type);
+
+			// Document ID (generated or not)
+			String _id = response.getId();
+			System.out.println("_id = " + _id);
+			// Version (if it's the first time you index this document, you will get: 1)
+			long _version = response.getVersion();
+			System.out.println("_version = " + _version);
+
+			// status has stored current instance statement.
+			RestStatus status = response.status();
+			System.out.println("status = " + status);
+
+			System.out.println("Result=" + response.getResult());
+
+			System.out.println("列表数据 Done");
+			
+			return true;
 		}
 		
-		System.out.println("=============================");
-		// 2. 添加索引数据
-		XContentBuilder doc = XContentFactory.jsonBuilder()
-				.startObject()
-					.field("title", webPage.getTitle())
-					.field("url", webPage.getUrl())
-					.field("domain", webPage.getDomain())
-					.field("spiderUUID", webPage.getSpiderUUID())
-					.field("spiderInfoId", webPage.getSpiderInfoId())
-					.field("category", webPage.getCategory())
-					.field("gatherTime", webPage.getGathertime())
-					.field("id", webPage.getId())
-					.field("publishTime", webPage.getPublishTime())
-					.field("dynamicFields", webPage.getDynamicFields())
-					.field("processTime", webPage.getProcessTime())
-
-					// .field("content", HTML_PREFIX + webPage.getContent() + HTML_SUFFIX)
-					// .field("keywords", webPage.getKeywords())
-					// .field("summary", webPage.getSummary())
-					// .field("namedEntity", webPage.getNamedEntity())
-				.endObject();
-
-		IndexResponse response = client.prepareIndex("commons", "webpage", webPage.getId()).setSource(doc).execute()
-				.actionGet();
-		System.out.println("id = " + webPage.getId());
-
-		// Index name
-		String _index = response.getIndex();
-		System.out.println("_index = " + _index);
-
-		// Type name
-		String _type = response.getType();
-		System.out.println("_type = " + _type);
-
-		// Document ID (generated or not)
-		String _id = response.getId();
-		System.out.println("_id = " + _id);
-		// Version (if it's the first time you index this document, you will get: 1)
-		long _version = response.getVersion();
-		System.out.println("_version = " + _version);
-
-		// status has stored current instance statement.
-		RestStatus status = response.status();
-		System.out.println("status = " + status);
-
-		System.out.println("Result=" + response.getResult());
-
-		System.out.println("列表数据 Done");
-		
-		return true;
 	}
 
 	public static void mainPage(String group_id, long publish_time, String title, String article_url, String tag,
