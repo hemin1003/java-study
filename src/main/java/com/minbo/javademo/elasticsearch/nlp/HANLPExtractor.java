@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
  */
 public class HANLPExtractor implements NLPExtractor {
 	
-    private static final Segment segment = HanLP.newSegment().enableOrganizationRecognize(true).enablePlaceRecognize(true);
+//    private static final Segment segment = HanLP.newSegment().enableOrganizationRecognize(true).enablePlaceRecognize(true);
 
     /**
      * 抽取命名实体
@@ -24,6 +24,7 @@ public class HANLPExtractor implements NLPExtractor {
      * @return map的key是一下三种nr, ns, nt  其value就是对应的词表
      */
     public Map<String, Set<String>> extractNamedEntity(String content) {
+    		Segment segment = HanLP.newSegment().enableOrganizationRecognize(true).enablePlaceRecognize(true);
         List<Term> termList = segment.seg(content);
         Set<String> nrList = termList.stream().filter(term -> term.nature.startsWith("nr"))
                 .map(term -> term.word).collect(Collectors.toSet());
