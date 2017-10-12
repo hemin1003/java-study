@@ -66,7 +66,6 @@ public class ProcessData {
 						.field("dynamicFields", webPage.getDynamicFields())
 						.field("processTime", webPage.getProcessTime())
 
-						 //.field("content", HTML_PREFIX + webPage.getContent() + HTML_SUFFIX)
 						.field("content", webPage.getContent())
 						.field("keywords", webPage.getKeywords())
 						.field("summary", webPage.getSummary())

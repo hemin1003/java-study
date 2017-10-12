@@ -95,12 +95,83 @@ public class ToutiaoDetail implements PageProcessor {
         return site;
     }
     
-    public void processDetailInfo() throws UnknownHostException {
+    public static String getId(String url) {
+		String regEx="[^0-9]";   
+		Pattern p = Pattern.compile(regEx);   
+		Matcher m = p.matcher(url);   
+		return m.replaceAll("").trim();
+    }
+    
+    public MyWebpage getMainInfo(String id) throws UnknownHostException {
+		//指定字段进行搜索
+		QueryBuilder qb1 = termQuery("id", id);
+	    int size = 1;
+		int from = 0;
+		SearchResponse response = null;
+		try {
+			response = client.prepareSearch("commons").setTypes("webpage")
+			        .setQuery(qb1) 	// Query
+			        .setFrom(from).setSize(size).setExplain(true)     
+			        .execute()     
+			        .actionGet();
+		} catch (Exception e) {
+			logger.error("搜索异常：id=" + id + ", msg=" + e.getMessage(), e);
+		}
+		MyWebpage webPage = new MyWebpage();
+		if(response == null) {
+			logger.info("------------------");
+			logger.info("查询不到，新处理....id=" + id);
+			return webPage;
+		}
+		SearchHits hits = response.getHits();
+		if(hits.getTotalHits()<=0) {
+			logger.info("------------------");
+			logger.info("不存在，新处理....id=" + id);
+			return webPage;
+		}
+		for (int i = 0; i < 1; i++) {
+			
+			webPage.setTitle((String) hits.getAt(i).getSource().get("title"));
+			webPage.setUrl((String) hits.getAt(i).getSource().get("url"));
+			webPage.setDomain((String) hits.getAt(i).getSource().get("domain"));
+			webPage.setSpiderUUID((String) hits.getAt(i).getSource().get("spiderUUID"));
+			webPage.setSpiderInfoId((String) hits.getAt(i).getSource().get("spiderInfoId"));
+			webPage.setCategory((String) hits.getAt(i).getSource().get("category"));
+			webPage.setGathertime(Long.valueOf(hits.getAt(i).getSource().get("gatherTime").toString()));
+			webPage.setId((String) hits.getAt(i).getSource().get("id"));
+			webPage.setItemId((String) hits.getAt(i).getSource().get("itemId"));
+			webPage.setPublishTime(Long.valueOf(hits.getAt(i).getSource().get("publishTime").toString()));
+			webPage.setDynamicFields((Map<String, Object>) hits.getAt(i).getSource().get("dynamicFields"));
+			webPage.setProcessTime(Long.valueOf(hits.getAt(i).getSource().get("processTime").toString()));
+			
+			webPage.setContent((String) hits.getAt(i).getSource().get("content"));
+			webPage.setKeywords((List<String>) hits.getAt(i).getSource().get("keywords"));
+			webPage.setSummary((List<String>) hits.getAt(i).getSource().get("summary"));
+			webPage.setNamedEntity((Map<String, Set<String>>) hits.getAt(i).getSource().get("namedEntity"));
+		}
+		return webPage;
+	}
+    
+    public static void main(String[] args) {
+		System.out.println("------------------");
+		System.out.println("------------------");
+		//2. 处理详情页面数据
+		System.out.println();
+		System.out.println("2. 处理详情页面数据...");
+		try {
+			ToutiaoDetail tDetail = new ToutiaoDetail();
+			tDetail.processDetailInfo(ToutiaoMain.TAG);
+		} catch (UnknownHostException e) {
+			e.printStackTrace();
+		}
+	}
+    
+    public void processDetailInfo(String tag) throws UnknownHostException {
 		long start=System.currentTimeMillis();   //获取开始时间
-		logger.info("=============开始获取列表数据进行处理 start=================");
+		logger.info("TAG=" + ToutiaoMain.TAG + "，=============开始获取列表数据进行处理 start=================");
 		
 		//指定字段进行搜索
-		QueryBuilder qb1 = termQuery("domain", "news_society");
+		QueryBuilder qb1 = termQuery("domain", tag);
 		
 		//组合查询搜索
 //		QueryBuilder qb2 = boolQuery()
@@ -175,75 +246,4 @@ public class ToutiaoDetail implements PageProcessor {
 		logger.info("获得数据完成");
 		logger.info("程序运行时间： "+(end-start)+" ms");
     }
-    
-    public static String getId(String url) {
-		String regEx="[^0-9]";   
-		Pattern p = Pattern.compile(regEx);   
-		Matcher m = p.matcher(url);   
-		return m.replaceAll("").trim();
-    }
-    
-    public MyWebpage getMainInfo(String id) throws UnknownHostException {
-		//指定字段进行搜索
-		QueryBuilder qb1 = termQuery("id", id);
-	    int size = 1;
-		int from = 0;
-		SearchResponse response = null;
-		try {
-			response = client.prepareSearch("commons").setTypes("webpage")
-			        .setQuery(qb1) 	// Query
-			        .setFrom(from).setSize(size).setExplain(true)     
-			        .execute()     
-			        .actionGet();
-		} catch (Exception e) {
-			logger.error("搜索异常：id=" + id + ", msg=" + e.getMessage(), e);
-		}
-		MyWebpage webPage = new MyWebpage();
-		if(response == null) {
-			logger.info("------------------");
-			logger.info("查询不到，新处理....id=" + id);
-			return webPage;
-		}
-		SearchHits hits = response.getHits();
-		if(hits.getTotalHits()<=0) {
-			logger.info("------------------");
-			logger.info("不存在，新处理....id=" + id);
-			return webPage;
-		}
-		for (int i = 0; i < 1; i++) {
-			
-			webPage.setTitle((String) hits.getAt(i).getSource().get("title"));
-			webPage.setUrl((String) hits.getAt(i).getSource().get("url"));
-			webPage.setDomain((String) hits.getAt(i).getSource().get("domain"));
-			webPage.setSpiderUUID((String) hits.getAt(i).getSource().get("spiderUUID"));
-			webPage.setSpiderInfoId((String) hits.getAt(i).getSource().get("spiderInfoId"));
-			webPage.setCategory((String) hits.getAt(i).getSource().get("category"));
-			webPage.setGathertime(Long.valueOf(hits.getAt(i).getSource().get("gatherTime").toString()));
-			webPage.setId((String) hits.getAt(i).getSource().get("id"));
-			webPage.setItemId((String) hits.getAt(i).getSource().get("itemId"));
-			webPage.setPublishTime(Long.valueOf(hits.getAt(i).getSource().get("publishTime").toString()));
-			webPage.setDynamicFields((Map<String, Object>) hits.getAt(i).getSource().get("dynamicFields"));
-			webPage.setProcessTime(Long.valueOf(hits.getAt(i).getSource().get("processTime").toString()));
-			
-			webPage.setContent((String) hits.getAt(i).getSource().get("content"));
-			webPage.setKeywords((List<String>) hits.getAt(i).getSource().get("keywords"));
-			webPage.setSummary((List<String>) hits.getAt(i).getSource().get("summary"));
-			webPage.setNamedEntity((Map<String, Set<String>>) hits.getAt(i).getSource().get("namedEntity"));
-		}
-		return webPage;
-	}
-    
-    public static void main(String[] args) {
-		System.out.println("------------------");
-		System.out.println("------------------");
-		//2. 处理详情页面数据
-		System.out.println();
-		System.out.println("2. 处理详情页面数据...");
-		try {
-			ToutiaoDetail tDetail = new ToutiaoDetail();
-			tDetail.processDetailInfo();
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-		}
-	}
 }
