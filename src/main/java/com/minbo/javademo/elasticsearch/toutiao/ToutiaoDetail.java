@@ -1,5 +1,6 @@
 package com.minbo.javademo.elasticsearch.toutiao;
 
+import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
 import static org.elasticsearch.index.query.QueryBuilders.termQuery;
 
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.apache.log4j.Logger;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
@@ -19,8 +21,6 @@ import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import com.minbo.javademo.utils.StrUtil;
 
@@ -35,9 +35,11 @@ import us.codecraft.webmagic.selector.JsonPathSelector;
  */
 public class ToutiaoDetail implements PageProcessor {
 	
+	protected static final Logger logger = Logger.getLogger(ToutiaoDetail.class);
+	
 	public static Client client;
     static {
-		String ip = IpUtils.IP;
+		String ip = Utils.IP;
 		Settings settings = Settings.builder().put("cluster.name", "elasticsearch").
 				put("client.transport.sniff", true).build();
 		try {
@@ -47,51 +49,51 @@ public class ToutiaoDetail implements PageProcessor {
 			e.printStackTrace();
 		}
 	}
-	
-	protected Logger logger = LoggerFactory.getLogger(getClass());
 
-	private Site site = Site.me().setCharset("UTF-8").setRetryTimes(2);//.setSleepTime(1000)
-//			.setHttpProxy(new HttpHost("171.38.1.110", 8118));
+	private Site site = Site.me();
 
     @Override
     public void process(Page page) {
-    		String json = page.getRawText();
-    		logger.info("详情数据解析.......>>>");
-        	logger.info("第一层解析...");
-    		logger.info("success=" + new JsonPathSelector("$.success").select(json));
-    		List<String> data = new JsonPathSelector("$.data").selectList(json);
-    		logger.info("data.size()=" + data.size());
-    		logger.info("============");
-    		logger.info("第二层解析...");
-    		for (int i = 0; i < data.size(); i++) {
-    			logger.info("---------------");
-    			logger.info("第" + (i+1) + "条：" + data.get(i));
-    			String result = data.get(i);
-    			String url = new JsonPathSelector("$.url").select(result);
-    			logger.info("title=" + new JsonPathSelector("$.title").select(result));
-    			logger.info("url=" + url);
-    			String content = new JsonPathSelector("$.content").select(result);
-    			String id = ToutiaoDetail.getId(page.getRequest().getUrl());
-    			logger.info("id=" + id);
-    			try {
-    				ProcessData pData = new ProcessData();
-    				pData.detailPage(id, content, client);;
-			} catch (IOException | ParseException e) {
-				e.printStackTrace();
-			}
-    		}
+    		try {
+	    		String json = page.getRawText();
+	    		logger.info("详情数据解析.......>>>");
+	        	logger.info("第一层解析...");
+	    		logger.info("success=" + new JsonPathSelector("$.success").select(json));
+	    		List<String> data = new JsonPathSelector("$.data").selectList(json);
+	    		logger.info("data.size()=" + data.size());
+	    		logger.info("============");
+	    		logger.info("第二层解析...");
+	    		for (int i = 0; i < data.size(); i++) {
+				logger.info("---------------");
+	    			logger.info("第" + (i+1) + "条：" + data.get(i));
+	    			String result = data.get(i);
+	    			String content = new JsonPathSelector("$.content").select(result);
+	    			String id = ToutiaoDetail.getId(page.getRequest().getUrl());
+	    			logger.info("id=" + id);
+				ProcessData pData = new ProcessData();
+				pData.detailPage(id, content, client);;
+	    		}
+    		} catch (IOException | ParseException e) {
+			logger.error("详情数据解析异常：" + e.getMessage(), e);
+		}
     }
 
     @Override   
     public Site getSite() {
     		site.addHeader("Accept", "*/*");
-    		site.addHeader("Accept-Encoding", "gzip, deflate, br");
-    		site.addHeader("Accept-Language", "en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2");
-    		site.addHeader("Connection", "keep-alive");
-    		site.addHeader("Cookie", "UM_distinctid=15d4e6b236b8c1-0212d4d6465428-30677808-13c680-15d4e6b236ccc1; uuid=\"w:6eeae48e765542f8816b14bd1a8803f2\"; sso_login_status=0; utm_source=toutiao; W2atIF=1; bottom-banner-hide-status=true; tt_webid=6464335891330024973; __utma=252651093.1935118179.1505121696.1505198559.1505198559.1; __utmc=252651093; __utmz=252651093.1505198559.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); tt_track_id=b4300ddb07cd24b2e473b6ebf33f8fbc; csrftoken=490b809baf80308e71e827d7f578d2fb; _ba=BA0.2-20170912-51225-LXO6Nly1dtclVPwkr0pO; _ga=GA1.2.1935118179.1505121696; _gid=GA1.2.1882035805.1505215622; tt_webid=6464861854974871054");
-    		site.addHeader("Host", "m.toutiao.com");
-    		site.addHeader("Referer", "https://m.toutiao.com/");
-    		site.addHeader("User-Agent", "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Mobile Safari/537.36");
+		site.addHeader("Accept-Encoding", "gzip, deflate, br");
+		site.addHeader("Accept-Language", "en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4,zh-TW;q=0.2");
+		site.addHeader("Connection", "keep-alive");
+		site.addHeader("Cookie",
+				"UM_distinctid=15d4e6b236b8c1-0212d4d6465428-30677808-13c680-15d4e6b236ccc1; uuid=\"w:6eeae48e765542f8816b14bd1a8803f2\"; sso_login_status=0; tt_webid=6464335891330024973; __utma=252651093.1935118179.1505121696.1505198559.1505198559.1; __utmz=252651093.1505198559.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); tt_track_id=b4300ddb07cd24b2e473b6ebf33f8fbc; tt_webid=6464861854974871054; W2atIF=1; csrftoken=490b809baf80308e71e827d7f578d2fb; __tasessionId=isfmcv2uq1507529285740; _ga=GA1.2.1935118179.1505121696; _gid=GA1.2.2066579823.1507529277; _ba=BA0.2-20170912-51225-LXO6Nly1dtclVPwkr0pO; bottom-banner-hide-status=true");
+		site.addHeader("Host", "m.toutiao.com");
+		site.addHeader("Referer", "https://m.toutiao.com/");
+		site.addHeader("User-Agent",
+				"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/601.1.46 (KHTML, like Gecko) Version/9.0 Mobile/13B143 Safari/601.1");
+		
+    		site.setTimeOut(60000);
+    		site.setCharset(Utils.CHARSET);
+    		site.setRetryTimes(2);
         return site;
     }
     
@@ -102,7 +104,7 @@ public class ToutiaoDetail implements PageProcessor {
 		return m.replaceAll("").trim();
     }
     
-    public MyWebpage getMainInfo(String id) throws UnknownHostException {
+    public Webpage getMainInfo(String id) throws UnknownHostException {
 		//指定字段进行搜索
 		QueryBuilder qb1 = termQuery("id", id);
 	    int size = 1;
@@ -117,7 +119,7 @@ public class ToutiaoDetail implements PageProcessor {
 		} catch (Exception e) {
 			logger.error("搜索异常：id=" + id + ", msg=" + e.getMessage(), e);
 		}
-		MyWebpage webPage = new MyWebpage();
+		Webpage webPage = new Webpage();
 		if(response == null) {
 			logger.info("------------------");
 			logger.info("查询不到，新处理....id=" + id);
@@ -148,30 +150,22 @@ public class ToutiaoDetail implements PageProcessor {
 			webPage.setKeywords((List<String>) hits.getAt(i).getSource().get("keywords"));
 			webPage.setSummary((List<String>) hits.getAt(i).getSource().get("summary"));
 			webPage.setNamedEntity((Map<String, Set<String>>) hits.getAt(i).getSource().get("namedEntity"));
+			webPage.setFlag((int) hits.getAt(i).getSource().get("flag"));
 		}
 		return webPage;
 	}
     
-    public static void main(String[] args) {
-		System.out.println("------------------");
-		System.out.println("------------------");
-		//2. 处理详情页面数据
-		System.out.println();
-		System.out.println("2. 处理详情页面数据...");
-		try {
-			ToutiaoDetail tDetail = new ToutiaoDetail();
-			tDetail.processDetailInfo(ToutiaoMain.TAG);
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-		}
-	}
-    
     public void processDetailInfo(String tag) throws UnknownHostException {
 		long start=System.currentTimeMillis();   //获取开始时间
-		logger.info("TAG=" + ToutiaoMain.TAG + "，=============开始获取列表数据进行处理 start=================");
+		logger.info("tag=" + tag + "，=============开始获取列表数据进行处理 start=================");
 		
 		//指定字段进行搜索
-		QueryBuilder qb1 = termQuery("domain", tag);
+//		QueryBuilder qb1 = termQuery("domain", tag);
+		
+		//组合查询搜索
+		QueryBuilder qb1 = boolQuery()
+				.must(termQuery("domain", tag)) 
+                .must(termQuery("flag", 0));
 		
 		//组合查询搜索
 //		QueryBuilder qb2 = boolQuery()
@@ -201,49 +195,45 @@ public class ToutiaoDetail implements PageProcessor {
         
 		SearchHits hits = response.getHits();  
 		logger.info("总列表数据总数：count=" + hits.getTotalHits());
-		String [] strArray = new String [(int) hits.getTotalHits()];
-		for (int i = 0; i < hits.getTotalHits(); i++) {
-			ToutiaoDetail tDetail = new ToutiaoDetail();
-			String id = hits.getAt(i).getSource().get("id").toString();
-			MyWebpage webPage = tDetail.getMainInfo(id);
-			if(webPage != null && !StrUtil.null2Str(webPage.getContent()).equals("")) {
-//				logger.info("已存在记录，跳过处理。id = " + webPage.getId());
-				continue;
-			}else {
+		if(hits.getTotalHits() > 0) {
+			String [] strArray = new String [(int) hits.getTotalHits()];
+			for (int i = 0; i < hits.getTotalHits(); i++) {
+				String id = hits.getAt(i).getSource().get("id").toString();
 				String url = "https://m.toutiao.com/i" + hits.getAt(i).getSource().get("id") + "/info/";
 				strArray[i] = url;
 				logger.info("---------------");
 				logger.info("id=" + id);
-				logger.info("webPage=" + webPage);
+				logger.info("webPage=" + hits.getAt(i).getSource().toString());
 				logger.info("不存在详情数据，添加抓取内容详情url=" + strArray[i]);
 			}
-		}
-		logger.info("================即将爬虫url详情内容的url列表==============");
-		int count = 0;
-		for (String string : strArray) {
-			if(!StrUtil.null2Str(string).equals("")) {
-				count++;
+			logger.info("================即将爬虫url详情内容的url列表==============");
+			int count = 0;
+			for (String string : strArray) {
+				if(!StrUtil.null2Str(string).equals("")) {
+					count++;
+				}
 			}
-		}
-		String [] strArrayTmp = new String [count];
-		int index = 0;
-		for (String string : strArray) {
-			if(!StrUtil.null2Str(string).equals("")) {
-				strArrayTmp[index] = string;
-				index++;
+			String [] strArrayTmp = new String [count];
+			int index = 0;
+			for (String string : strArray) {
+				if(!StrUtil.null2Str(string).equals("")) {
+					strArrayTmp[index] = string;
+					index++;
+				}
 			}
+			logger.info("------------------count=" + count);
+			for (String string : strArrayTmp) {
+				logger.info(string);
+			}
+			
+			if(strArrayTmp.length > 0) {
+				int finalReq = count>MainTest.THREAD_COUNT ? MainTest.THREAD_COUNT:count;
+				logger.info("并发请求数：finalReq=" + finalReq);
+				Spider.create(new ToutiaoDetail()).addUrl(strArrayTmp).thread(finalReq).run();
+			}
+			logger.info("获得数据完成");
 		}
-		logger.info("------------------count=" + count);
-		for (String string : strArrayTmp) {
-			logger.info(string);
-		}
-		
-		if(strArrayTmp.length > 0) {
-			Spider.create(new ToutiaoDetail()).addUrl(strArrayTmp).thread(1).run();
-		}
-		
 		long end=System.currentTimeMillis(); //获取结束时间
-		logger.info("获得数据完成");
 		logger.info("程序运行时间： "+(end-start)+" ms");
     }
 }
