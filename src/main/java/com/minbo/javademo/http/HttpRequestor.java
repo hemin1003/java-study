@@ -14,7 +14,11 @@ import java.net.URLConnection;
 import java.util.Iterator;
 import java.util.Map;
 
+import org.apache.log4j.Logger;
+
 public class HttpRequestor {
+	
+	protected static final Logger logger = Logger.getLogger(HttpRequestor.class);
 	
 	private String charset = "utf-8";
 	private Integer connectTimeout = null;
@@ -31,7 +35,7 @@ public class HttpRequestor {
 	 * @throws IOException
 	 */
 	public String doGet(String url) throws Exception {
-
+		
 		URL localURL = new URL(url);
 
 		URLConnection connection = openConnection(localURL);
@@ -39,7 +43,7 @@ public class HttpRequestor {
 
 		httpURLConnection.setRequestProperty("Accept-Charset", charset);
 		httpURLConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
-
+		
 		InputStream inputStream = null;
 		InputStreamReader inputStreamReader = null;
 		BufferedReader reader = null;
@@ -51,14 +55,17 @@ public class HttpRequestor {
 		}
 
 		try {
+			
 			inputStream = httpURLConnection.getInputStream();
 			inputStreamReader = new InputStreamReader(inputStream);
 			reader = new BufferedReader(inputStreamReader);
-
+			
+			long start = System.currentTimeMillis(); // 获取开始时间
 			while ((tempLine = reader.readLine()) != null) {
 				resultBuffer.append(tempLine);
 			}
-
+			long end = System.currentTimeMillis(); // 获取结束时间
+			logger.info("运行总耗费时间： " + (end - start) + " ms");
 		} finally {
 
 			if (reader != null) {

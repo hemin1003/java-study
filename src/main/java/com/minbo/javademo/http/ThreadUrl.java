@@ -9,12 +9,13 @@ public class ThreadUrl extends Thread{
 	@Override
 	public void run() {
 		try {
-			logger.info(this.getId() + ", " + this.getName() + " 开始跑了...");
-			long start = System.currentTimeMillis(); // 获取开始时间
-			String cotent = new HttpRequestor().doGet("http://yc1616.cn/commons/_search?pretty");
-			logger.info(cotent);
-			long end = System.currentTimeMillis(); // 获取结束时间
-			logger.info("运行总耗费时间： " + (end - start) + " ms");
+//			logger.info("线程信息：thread id=" + this.getId() + ", thread name=" + this.getName() + "，开始跑了...");
+//			long start = System.currentTimeMillis(); // 获取开始时间
+//			String cotent = new HttpRequestor().doGet("http://yc1616.cn/commons/_search?pretty");
+			String cotent = new HttpRequestor().doGet("http://yc1616.cn/commons/webpage/6475863172434625038");
+//			logger.info(cotent);
+//			long end = System.currentTimeMillis(); // 获取结束时间
+//			logger.info("运行总耗费时间： " + (end - start) + " ms");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

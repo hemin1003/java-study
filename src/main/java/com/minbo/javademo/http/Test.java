@@ -18,12 +18,12 @@ public class Test {
 //        System.out.println(new HttpRequestor().doGet("http://localhost:8080/OneHttpServer/"));
         
 		logger.info("开始批量测试...");
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 10; i++) {
 			for (int j = 0; j < 50; j++) {
 				new ThreadUrl().start();
 			}
 			logger.info("休眠一下...");
-			Thread.sleep(500);
+			Thread.sleep(5000);
 		}
 	}
 
