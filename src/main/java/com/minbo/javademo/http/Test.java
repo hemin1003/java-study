@@ -1,13 +1,14 @@
 package com.minbo.javademo.http;
 
-import java.util.HashMap;
-import java.util.Map;
+import org.apache.log4j.Logger;
 
 public class Test {
+	
+	protected static final Logger logger = Logger.getLogger(Test.class);
 
 	public static void main(String[] args) throws Exception {
 		 /* Post Request */
-        Map dataMap = new HashMap();
+//        Map dataMap = new HashMap();
 //        dataMap.put("username", "Nick Huang");
 //        dataMap.put("blog", "IT");
         
@@ -15,6 +16,15 @@ public class Test {
         
         /* Get Request */
 //        System.out.println(new HttpRequestor().doGet("http://localhost:8080/OneHttpServer/"));
+        
+		logger.info("开始批量测试...");
+        for (int i = 0; i < 2; i++) {
+			for (int j = 0; j < 50; j++) {
+				new ThreadUrl().start();
+			}
+			logger.info("休眠一下...");
+			Thread.sleep(500);
+		}
 	}
 
 }
