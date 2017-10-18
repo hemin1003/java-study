@@ -680,4 +680,995 @@
  2017-10-18 14:28:02.802 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ThreadBatch {ThreadBatch.java:92} - ----------
  2017-10-18 14:28:02.802 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ThreadBatch {ThreadBatch.java:93} - ----------
  2017-10-18 14:28:07.805 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ThreadBatch {ThreadBatch.java:100} - 该批次运行总耗费时间： 27607 ms
+ 2017-10-18 15:37:35.927 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:160} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 15:37:36.116 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:198} - 总列表数据总数：count=1
+ 2017-10-18 15:37:36.129 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:205} - ---------------
+ 2017-10-18 15:37:36.129 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:206} - id=6478081432441848334
+ 2017-10-18 15:37:36.130 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:207} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[食用红枣是很好的食材, 红枣虽好但不要盲目食用一、不宜和黄瓜或萝卜一起食用萝卜会有抗热血酸酶, 下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌, 糖尿病患者不宜食用红枣气味甘、辛、热, 可见红枣有着很好的美容作用], publishTime=1508295870000, flag=1, keywords=[红枣, 食用, 不宜, 寒热, 维生素, 美容, 盲目, 容易, 适合, 不可], dynamicFields={imgs=[]}, title=提醒，红枣虽好但不要盲目, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478081432441848334/, processTime=3154, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/40160002bbbc6f3de30a" img_width="1200" img_height="797" inline="0" alt="提醒，红枣虽好但不要盲目" onerror="javascript:errorimg.call(this);"></p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说“一日吃仨枣，一辈子不显老”，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！</p><p>提醒！红枣虽好但不要盲目食用</p><p>一、不宜和黄瓜或萝卜一起食用</p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。</p><p>二、不可过量</p><p>本草纲目中说、“多食令人寒热，凡羸瘦者不可食。”脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。</p></div> </body></html>, itemId=6478081432441848334, domain=news_regimen, namedEntity={nr=[都是, 辛, 都会], ns=[], nt=[哪些人, 一下哪些人]}, gatherTime=1508309552000, id=6478081432441848334, category=冰山下的火种}
+ 2017-10-18 15:37:36.130 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:208} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 15:37:36.130 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 15:37:36.131 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:225} - ------------------count=1
+ 2017-10-18 15:37:36.132 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:227} - https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 15:37:36.132 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:232} - 并发请求数：finalReq=1
+ 2017-10-18 15:37:36.276 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 15:37:36.278 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 15:37:41.660 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 15:37:41.660 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 15:37:41.675 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 15:37:41.679 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 15:37:41.680 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 15:37:41.680 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 15:37:41.681 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 15:37:41.681 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"冰山下的火种","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/39b100040a5bf888017f","screen_name":"冰山下的火种","id":"1577953458312206"},"publish_time":1508295870,"source":"冰山下的火种","title":"提醒，红枣虽好但不要盲目","url":"http:\/\/toutiao.com\/group\/6478081432441848334\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/40160002bbbc6f3de30a\" img_width=\"1200\" img_height=\"797\" inline=\"0\" alt=\"提醒，红枣虽好但不要盲目\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说\u201C一日吃仨枣，一辈子不显老\u201D，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！<\/p><p>提醒！红枣虽好但不要盲目食用<\/p><p>一、不宜和黄瓜或萝卜一起食用<\/p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。<\/p><p>二、不可过量<\/p><p>本草纲目中说、\u201C多食令人寒热，凡羸瘦者不可食。\u201D脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。<\/p><\/div>"}
+ 2017-10-18 15:37:41.681 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478081432441848334
+ 2017-10-18 15:37:46.690 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - 获得数据完成
+ 2017-10-18 15:37:46.691 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - 程序运行时间： 10765 ms
+ 2017-10-18 15:56:06.767 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:163} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 15:56:06.929 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:201} - 总列表数据总数：count=1
+ 2017-10-18 15:56:06.942 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:208} - ---------------
+ 2017-10-18 15:56:06.943 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - id=6478081432441848334
+ 2017-10-18 15:56:06.943 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[食用红枣是很好的食材, 红枣虽好但不要盲目食用一、不宜和黄瓜或萝卜一起食用萝卜会有抗热血酸酶, 下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌, 糖尿病患者不宜食用红枣气味甘、辛、热, 可见红枣有着很好的美容作用], publishTime=1508295870000, flag=1, keywords=[红枣, 食用, 不宜, 寒热, 维生素, 美容, 盲目, 容易, 适合, 不可], dynamicFields={imgs=[]}, title=提醒，红枣虽好但不要盲目, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478081432441848334/, processTime=3154, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/40160002bbbc6f3de30a" img_width="1200" img_height="797" inline="0" alt="提醒，红枣虽好但不要盲目" onerror="javascript:errorimg.call(this);"></p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说“一日吃仨枣，一辈子不显老”，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！</p><p>提醒！红枣虽好但不要盲目食用</p><p>一、不宜和黄瓜或萝卜一起食用</p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。</p><p>二、不可过量</p><p>本草纲目中说、“多食令人寒热，凡羸瘦者不可食。”脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。</p></div> </body></html>, itemId=6478081432441848334, domain=news_regimen, namedEntity={nr=[都是, 辛, 都会], ns=[], nt=[哪些人, 一下哪些人]}, gatherTime=1508309552000, id=6478081432441848334, category=冰山下的火种}
+ 2017-10-18 15:56:06.943 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:211} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 15:56:06.944 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:213} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 15:56:06.944 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - ------------------count=1
+ 2017-10-18 15:56:06.944 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:230} - https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 15:56:06.945 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - 并发请求数：finalReq=1
+ 2017-10-18 15:56:07.082 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 15:56:07.084 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 15:56:12.484 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 15:56:12.485 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 15:56:12.501 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 15:56:12.506 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 15:56:12.507 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 15:56:12.507 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 15:56:12.507 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 15:56:12.508 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"冰山下的火种","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/39b100040a5bf888017f","screen_name":"冰山下的火种","id":"1577953458312206"},"publish_time":1508295870,"source":"冰山下的火种","title":"提醒，红枣虽好但不要盲目","url":"http:\/\/toutiao.com\/group\/6478081432441848334\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/40160002bbbc6f3de30a\" img_width=\"1200\" img_height=\"797\" inline=\"0\" alt=\"提醒，红枣虽好但不要盲目\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说\u201C一日吃仨枣，一辈子不显老\u201D，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！<\/p><p>提醒！红枣虽好但不要盲目食用<\/p><p>一、不宜和黄瓜或萝卜一起食用<\/p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。<\/p><p>二、不可过量<\/p><p>本草纲目中说、\u201C多食令人寒热，凡羸瘦者不可食。\u201D脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。<\/p><\/div>"}
+ 2017-10-18 15:56:12.508 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478081432441848334
+ 2017-10-18 15:56:12.589 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:77} - imgs=[\"https://p3.pstatp.com/large/40160002bbbc6f3de30a\"]
+ 2017-10-18 15:56:17.596 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - 获得数据完成
+ 2017-10-18 15:56:17.597 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:241} - 程序运行时间： 10831 ms
+ 2017-10-18 15:58:16.063 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:163} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 15:58:16.218 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:202} - 总列表数据总数：count=1
+ 2017-10-18 15:58:16.228 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - ---------------
+ 2017-10-18 15:58:16.228 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - id=6475498273632158222
+ 2017-10-18 15:58:16.228 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:211} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350015, summary=[儿媳妇怀的根本就不是儿子的孩子, 但是儿媳妇还没有孩子, 交往后儿子就经常带儿媳妇来家里, 儿子十岁的时候我跟老公离婚了, 可是儿媳妇怀孕了], publishTime=1507694431000, flag=1, keywords=[儿媳妇, 儿子, 孩子, 家里, 房子, 离婚, 结婚, 一起, 怀孕, 起来], dynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}, title=儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发, spiderInfoId=AV8LU0J38-owkfOcKCOH, url=http://toutiao.com/group/6475498273632158222/, processTime=1927, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/3ed10002763d59e522cb" img_width="500" img_height="287" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。</p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。</p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。</p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。</p><p><img src="https://p3.pstatp.com/large/3ed0000277db1dbae93f" img_width="900" img_height="505" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。</p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！</p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。</p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。</p><p><img src="https://p3.pstatp.com/large/3f2600005c89b43c1590" img_width="360" img_height="270" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。</p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。</p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。</p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。</p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！</p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！</p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！</p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！</p><p>儿媳妇怎么可以这样骗我啊！</p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！</p><p>我真的很矛盾！我到底该质问儿媳妇吗？</p></div> </body></html>, itemId=6475498273632158222, domain=news_story, namedEntity={nr=[小三, 才在, 周], ns=[], nt=[养大成人, 才从单位]}, gatherTime=1508309558000, id=6475498273632158222, category=清小缘}
+ 2017-10-18 15:58:16.229 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 15:58:16.229 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:214} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 15:58:16.230 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:229} - ------------------count=1
+ 2017-10-18 15:58:16.230 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:231} - https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 15:58:16.231 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - 并发请求数：finalReq=1
+ 2017-10-18 15:58:16.372 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 15:58:16.374 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 15:58:29.672 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 15:58:29.672 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 15:58:29.690 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 15:58:29.696 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 15:58:29.697 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 15:58:29.697 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 15:58:29.698 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 15:58:29.698 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":1,"detail_source":"清小缘","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":false,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/2c5d000cdf3e02342335","screen_name":"清小缘","id":"5882165988"},"publish_time":1507694431,"source":"清小缘","title":"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发","url":"http:\/\/toutiao.com\/group\/6475498273632158222\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed10002763d59e522cb\" img_width=\"500\" img_height=\"287\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。<\/p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。<\/p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。<\/p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed0000277db1dbae93f\" img_width=\"900\" img_height=\"505\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。<\/p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！<\/p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。<\/p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3f2600005c89b43c1590\" img_width=\"360\" img_height=\"270\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。<\/p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。<\/p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。<\/p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。<\/p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！<\/p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！<\/p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！<\/p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！<\/p><p>儿媳妇怎么可以这样骗我啊！<\/p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！<\/p><p>我真的很矛盾！我到底该质问儿媳妇吗？<\/p><\/div>"}
+ 2017-10-18 15:58:29.699 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6475498273632158222
+ 2017-10-18 15:58:29.770 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:77} - imgs=[\"https://p3.pstatp.com/large/3ed10002763d59e522cb\", \"https://p3.pstatp.com/large/3ed0000277db1dbae93f\", \"https://p3.pstatp.com/large/3f2600005c89b43c1590\"]
+ 2017-10-18 15:58:34.775 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:239} - 获得数据完成
+ 2017-10-18 15:58:34.775 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:242} - 程序运行时间： 18713 ms
+ 2017-10-18 16:00:44.024 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:163} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:00:44.191 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:202} - 总列表数据总数：count=1
+ 2017-10-18 16:00:44.204 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - ---------------
+ 2017-10-18 16:00:44.204 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - id=6478116421921407501
+ 2017-10-18 16:00:44.204 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:211} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[放入腌好的鱼两面煎金黄, 鱼则是进补的好水产饮食, 一般畜肉的脂肪多为饱和脂肪酸, 而鱼的脂肪却含有多种不饱和脂肪酸, 营养价值极高1、鱼处理干净后划刀撒盐腌半小时以上], publishTime=1508304016000, flag=1, keywords=[放入, 营养, 价值, 极高, 赤小豆, 进补, 南瓜, 甘草, 脂肪, 荆芥], dynamicFields={imgs=[]}, title=自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478116421921407501/, processTime=6333, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p>“冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。</p><p><img src="https://p3.pstatp.com/large/40120003113f1e223319" img_width="574" img_height="765" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p class="pgc-img-caption">营养价值极高</p><p>1、鱼处理干净后划刀撒盐腌半小时以上。</p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。</p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。</p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。</p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。</p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火</p><p><img src="https://p3.pstatp.com/large/4017000311b8632ea836" img_width="765" img_height="574" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。</span><br></p></div> </body></html>, itemId=6478116421921407501, domain=news_regimen, namedEntity={nr=[盛三, 鱼再, 鱼则, 盖盖], ns=[], nt=[]}, gatherTime=1508309556000, id=6478116421921407501, category=佰叶叹}
+ 2017-10-18 16:00:44.205 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:00:44.205 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:214} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:00:44.207 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:229} - ------------------count=1
+ 2017-10-18 16:00:44.207 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:231} - https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:00:44.208 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - 并发请求数：finalReq=1
+ 2017-10-18 16:00:44.357 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:00:44.360 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:00:50.805 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:00:50.805 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:00:50.821 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:00:50.825 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:00:50.826 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:00:50.827 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:00:50.827 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:00:50.827 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
+ 2017-10-18 16:00:50.828 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
+ 2017-10-18 16:00:50.893 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:77} - imgs=[\"https://p3.pstatp.com/large/40120003113f1e223319\", \"https://p3.pstatp.com/large/4017000311b8632ea836\"]
+ 2017-10-18 16:00:55.898 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:239} - 获得数据完成
+ 2017-10-18 16:00:55.899 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:242} - 程序运行时间： 11876 ms
+ 2017-10-18 16:04:38.350 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:163} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:04:38.502 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:202} - 总列表数据总数：count=1
+ 2017-10-18 16:04:38.512 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - ---------------
+ 2017-10-18 16:04:38.512 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - id=6478116421921407501
+ 2017-10-18 16:04:38.512 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:211} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[放入腌好的鱼两面煎金黄, 鱼则是进补的好水产饮食, 一般畜肉的脂肪多为饱和脂肪酸, 而鱼的脂肪却含有多种不饱和脂肪酸, 营养价值极高1、鱼处理干净后划刀撒盐腌半小时以上], publishTime=1508304016000, flag=1, keywords=[放入, 营养, 价值, 极高, 赤小豆, 进补, 南瓜, 甘草, 脂肪, 荆芥], dynamicFields={imgs=[]}, title=自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478116421921407501/, processTime=6333, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p>“冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。</p><p><img src="https://p3.pstatp.com/large/40120003113f1e223319" img_width="574" img_height="765" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p class="pgc-img-caption">营养价值极高</p><p>1、鱼处理干净后划刀撒盐腌半小时以上。</p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。</p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。</p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。</p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。</p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火</p><p><img src="https://p3.pstatp.com/large/4017000311b8632ea836" img_width="765" img_height="574" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。</span><br></p></div> </body></html>, itemId=6478116421921407501, domain=news_regimen, namedEntity={nr=[盛三, 鱼再, 鱼则, 盖盖], ns=[], nt=[]}, gatherTime=1508309556000, id=6478116421921407501, category=佰叶叹}
+ 2017-10-18 16:04:38.513 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:04:38.513 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:214} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:04:38.514 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:229} - ------------------count=1
+ 2017-10-18 16:04:38.514 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:231} - https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:04:38.514 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - 并发请求数：finalReq=1
+ 2017-10-18 16:04:38.646 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:04:38.648 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:04:44.027 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:04:44.027 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:04:44.044 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:04:44.049 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:04:44.050 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:04:44.050 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:04:44.051 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:04:44.051 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
+ 2017-10-18 16:04:44.051 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
+ 2017-10-18 16:04:44.116 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:77} - imgs=\"https://p3.pstatp.com/large/40120003113f1e223319\"
+ 2017-10-18 16:04:49.120 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:239} - 获得数据完成
+ 2017-10-18 16:04:49.120 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:242} - 程序运行时间： 10770 ms
+ 2017-10-18 16:10:10.534 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:164} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:10:10.709 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:203} - 总列表数据总数：count=1
+ 2017-10-18 16:10:10.719 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - ---------------
+ 2017-10-18 16:10:10.719 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:211} - id=6478116421921407501
+ 2017-10-18 16:10:10.720 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[放入腌好的鱼两面煎金黄, 鱼则是进补的好水产饮食, 一般畜肉的脂肪多为饱和脂肪酸, 而鱼的脂肪却含有多种不饱和脂肪酸, 营养价值极高1、鱼处理干净后划刀撒盐腌半小时以上], publishTime=1508304016000, flag=1, keywords=[放入, 营养, 价值, 极高, 赤小豆, 进补, 南瓜, 甘草, 脂肪, 荆芥], dynamicFields={imgs=[]}, title=自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478116421921407501/, processTime=6333, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p>“冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。</p><p><img src="https://p3.pstatp.com/large/40120003113f1e223319" img_width="574" img_height="765" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p class="pgc-img-caption">营养价值极高</p><p>1、鱼处理干净后划刀撒盐腌半小时以上。</p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。</p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。</p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。</p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。</p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火</p><p><img src="https://p3.pstatp.com/large/4017000311b8632ea836" img_width="765" img_height="574" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。</span><br></p></div> </body></html>, itemId=6478116421921407501, domain=news_regimen, namedEntity={nr=[盛三, 鱼再, 鱼则, 盖盖], ns=[], nt=[]}, gatherTime=1508309556000, id=6478116421921407501, category=佰叶叹}
+ 2017-10-18 16:10:10.720 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:213} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:10:10.720 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:215} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:10:10.721 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:230} - ------------------count=1
+ 2017-10-18 16:10:10.721 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:232} - https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:10:10.722 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:237} - 并发请求数：finalReq=1
+ 2017-10-18 16:10:10.852 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:10:10.854 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:10:16.215 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:10:16.215 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:10:16.230 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:10:16.235 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:10:16.236 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:10:16.236 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:10:16.236 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:10:16.236 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
+ 2017-10-18 16:10:16.237 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
+ 2017-10-18 16:10:16.300 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:78} - imgs=https://p3.pstatp.com/large/40120003113f1e223319
+ 2017-10-18 16:10:21.302 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:240} - 获得数据完成
+ 2017-10-18 16:10:21.303 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 程序运行时间： 10770 ms
+ 2017-10-18 16:18:14.159 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:167} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:18:15.038 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:206} - 总列表数据总数：count=1
+ 2017-10-18 16:18:15.050 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:213} - ---------------
+ 2017-10-18 16:18:15.050 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:214} - id=6478116421921407501
+ 2017-10-18 16:18:15.050 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:215} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[放入腌好的鱼两面煎金黄, 鱼则是进补的好水产饮食, 一般畜肉的脂肪多为饱和脂肪酸, 而鱼的脂肪却含有多种不饱和脂肪酸, 营养价值极高1、鱼处理干净后划刀撒盐腌半小时以上], publishTime=1508304016000, flag=1, keywords=[放入, 营养, 价值, 极高, 赤小豆, 进补, 南瓜, 甘草, 脂肪, 荆芥], dynamicFields={imgs=[]}, title=自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478116421921407501/, processTime=6333, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p>“冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。</p><p><img src="https://p3.pstatp.com/large/40120003113f1e223319" img_width="574" img_height="765" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p class="pgc-img-caption">营养价值极高</p><p>1、鱼处理干净后划刀撒盐腌半小时以上。</p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。</p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。</p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。</p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。</p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火</p><p><img src="https://p3.pstatp.com/large/4017000311b8632ea836" img_width="765" img_height="574" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。</span><br></p></div> </body></html>, itemId=6478116421921407501, domain=news_regimen, namedEntity={nr=[盛三, 鱼再, 鱼则, 盖盖], ns=[], nt=[]}, gatherTime=1508309556000, id=6478116421921407501, category=佰叶叹}
+ 2017-10-18 16:18:15.051 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:18:15.051 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:18:15.052 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:233} - ------------------count=1
+ 2017-10-18 16:18:15.052 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:18:15.053 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:240} - 并发请求数：finalReq=1
+ 2017-10-18 16:18:15.211 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:18:15.213 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:18:20.585 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:18:20.585 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:18:20.601 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:18:20.605 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:18:20.606 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:18:20.606 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:18:20.607 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:18:20.607 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
+ 2017-10-18 16:18:20.607 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
+ 2017-10-18 16:18:20.722 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:73} - 已存在详情数据了，重复记录，跳过处理。webPage.id = 6478116421921407501
+ 2017-10-18 16:18:25.725 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 获得数据完成
+ 2017-10-18 16:18:25.726 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:246} - 程序运行时间： 11568 ms
+ 2017-10-18 16:19:56.540 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:167} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:19:56.716 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:206} - 总列表数据总数：count=1
+ 2017-10-18 16:19:56.727 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:213} - ---------------
+ 2017-10-18 16:19:56.727 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:214} - id=6478116421921407501
+ 2017-10-18 16:19:56.728 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:215} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[放入腌好的鱼两面煎金黄, 鱼则是进补的好水产饮食, 一般畜肉的脂肪多为饱和脂肪酸, 而鱼的脂肪却含有多种不饱和脂肪酸, 营养价值极高1、鱼处理干净后划刀撒盐腌半小时以上], publishTime=1508304016000, flag=1, keywords=[放入, 营养, 价值, 极高, 赤小豆, 进补, 南瓜, 甘草, 脂肪, 荆芥], dynamicFields={imgs=[]}, title=自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478116421921407501/, processTime=6333, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p>“冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。</p><p><img src="https://p3.pstatp.com/large/40120003113f1e223319" img_width="574" img_height="765" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p class="pgc-img-caption">营养价值极高</p><p>1、鱼处理干净后划刀撒盐腌半小时以上。</p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。</p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。</p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。</p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。</p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火</p><p><img src="https://p3.pstatp.com/large/4017000311b8632ea836" img_width="765" img_height="574" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。</span><br></p></div> </body></html>, itemId=6478116421921407501, domain=news_regimen, namedEntity={nr=[盛三, 鱼再, 鱼则, 盖盖], ns=[], nt=[]}, gatherTime=1508309556000, id=6478116421921407501, category=佰叶叹}
+ 2017-10-18 16:19:56.728 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:19:56.729 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:19:56.729 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:233} - ------------------count=1
+ 2017-10-18 16:19:56.730 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:19:56.730 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:240} - 并发请求数：finalReq=1
+ 2017-10-18 16:19:56.875 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:19:56.878 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:20:02.281 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:20:02.281 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:20:02.297 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:20:02.302 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:20:02.303 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:20:02.303 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:20:02.303 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:20:02.304 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
+ 2017-10-18 16:20:02.304 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
+ 2017-10-18 16:20:02.435 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:73} - DynamicFields={imgs=[]}
+ 2017-10-18 16:20:02.436 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:74} - imgs=https://p3.pstatp.com/large/40120003113f1e223319
+ 2017-10-18 16:22:59.034 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:167} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:22:59.212 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:208} - 总列表数据总数：count=1
+ 2017-10-18 16:22:59.223 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:215} - ---------------
+ 2017-10-18 16:22:59.223 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - id=6478081432441848334
+ 2017-10-18 16:22:59.224 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[食用红枣是很好的食材, 红枣虽好但不要盲目食用一、不宜和黄瓜或萝卜一起食用萝卜会有抗热血酸酶, 下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌, 糖尿病患者不宜食用红枣气味甘、辛、热, 可见红枣有着很好的美容作用], publishTime=1508295870000, flag=1, keywords=[红枣, 食用, 不宜, 寒热, 维生素, 美容, 盲目, 容易, 适合, 不可], dynamicFields={imgs=[]}, title=提醒，红枣虽好但不要盲目, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478081432441848334/, processTime=3154, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/40160002bbbc6f3de30a" img_width="1200" img_height="797" inline="0" alt="提醒，红枣虽好但不要盲目" onerror="javascript:errorimg.call(this);"></p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说“一日吃仨枣，一辈子不显老”，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！</p><p>提醒！红枣虽好但不要盲目食用</p><p>一、不宜和黄瓜或萝卜一起食用</p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。</p><p>二、不可过量</p><p>本草纲目中说、“多食令人寒热，凡羸瘦者不可食。”脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。</p></div> </body></html>, itemId=6478081432441848334, domain=news_regimen, namedEntity={nr=[都是, 辛, 都会], ns=[], nt=[哪些人, 一下哪些人]}, gatherTime=1508309552000, id=6478081432441848334, category=冰山下的火种}
+ 2017-10-18 16:22:59.224 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:22:59.224 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:220} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:22:59.225 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - ------------------count=1
+ 2017-10-18 16:22:59.225 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:237} - https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:22:59.226 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:242} - 并发请求数：finalReq=1
+ 2017-10-18 16:22:59.378 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:22:59.381 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:23:04.815 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:23:04.815 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:23:04.832 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:23:04.836 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:23:04.837 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:23:04.837 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:23:04.838 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:23:04.838 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"冰山下的火种","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/39b100040a5bf888017f","screen_name":"冰山下的火种","id":"1577953458312206"},"publish_time":1508295870,"source":"冰山下的火种","title":"提醒，红枣虽好但不要盲目","url":"http:\/\/toutiao.com\/group\/6478081432441848334\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/40160002bbbc6f3de30a\" img_width=\"1200\" img_height=\"797\" inline=\"0\" alt=\"提醒，红枣虽好但不要盲目\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说\u201C一日吃仨枣，一辈子不显老\u201D，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！<\/p><p>提醒！红枣虽好但不要盲目食用<\/p><p>一、不宜和黄瓜或萝卜一起食用<\/p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。<\/p><p>二、不可过量<\/p><p>本草纲目中说、\u201C多食令人寒热，凡羸瘦者不可食。\u201D脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。<\/p><\/div>"}
+ 2017-10-18 16:23:04.838 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478081432441848334
+ 2017-10-18 16:23:04.962 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:73} - DynamicFields={imgs=[]}
+ 2017-10-18 16:23:04.962 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:74} - imgs=https://p3.pstatp.com/large/40160002bbbc6f3de30a
+ 2017-10-18 16:23:39.167 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:167} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:23:39.858 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:208} - 总列表数据总数：count=1
+ 2017-10-18 16:23:39.870 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:215} - ---------------
+ 2017-10-18 16:23:39.870 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - id=6475498273632158222
+ 2017-10-18 16:23:39.870 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350015, summary=[儿媳妇怀的根本就不是儿子的孩子, 但是儿媳妇还没有孩子, 交往后儿子就经常带儿媳妇来家里, 儿子十岁的时候我跟老公离婚了, 可是儿媳妇怀孕了], publishTime=1507694431000, flag=1, keywords=[儿媳妇, 儿子, 孩子, 家里, 房子, 离婚, 结婚, 一起, 怀孕, 起来], dynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}, title=儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发, spiderInfoId=AV8LU0J38-owkfOcKCOH, url=http://toutiao.com/group/6475498273632158222/, processTime=1927, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/3ed10002763d59e522cb" img_width="500" img_height="287" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。</p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。</p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。</p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。</p><p><img src="https://p3.pstatp.com/large/3ed0000277db1dbae93f" img_width="900" img_height="505" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。</p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！</p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。</p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。</p><p><img src="https://p3.pstatp.com/large/3f2600005c89b43c1590" img_width="360" img_height="270" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。</p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。</p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。</p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。</p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！</p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！</p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！</p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！</p><p>儿媳妇怎么可以这样骗我啊！</p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！</p><p>我真的很矛盾！我到底该质问儿媳妇吗？</p></div> </body></html>, itemId=6475498273632158222, domain=news_story, namedEntity={nr=[小三, 才在, 周], ns=[], nt=[养大成人, 才从单位]}, gatherTime=1508309558000, id=6475498273632158222, category=清小缘}
+ 2017-10-18 16:23:39.871 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:23:39.871 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:220} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:23:39.872 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - ------------------count=1
+ 2017-10-18 16:23:39.872 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:237} - https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:23:39.873 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:242} - 并发请求数：finalReq=1
+ 2017-10-18 16:23:40.053 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:23:40.056 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:23:45.472 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:23:45.472 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:23:45.490 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:23:45.495 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:23:45.496 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:23:45.497 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:23:45.497 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:23:45.497 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":1,"detail_source":"清小缘","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":false,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/2c5d000cdf3e02342335","screen_name":"清小缘","id":"5882165988"},"publish_time":1507694431,"source":"清小缘","title":"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发","url":"http:\/\/toutiao.com\/group\/6475498273632158222\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed10002763d59e522cb\" img_width=\"500\" img_height=\"287\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。<\/p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。<\/p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。<\/p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed0000277db1dbae93f\" img_width=\"900\" img_height=\"505\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。<\/p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！<\/p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。<\/p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3f2600005c89b43c1590\" img_width=\"360\" img_height=\"270\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。<\/p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。<\/p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。<\/p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。<\/p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！<\/p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！<\/p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！<\/p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！<\/p><p>儿媳妇怎么可以这样骗我啊！<\/p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！<\/p><p>我真的很矛盾！我到底该质问儿媳妇吗？<\/p><\/div>"}
+ 2017-10-18 16:23:45.498 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6475498273632158222
+ 2017-10-18 16:23:45.627 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:73} - DynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}
+ 2017-10-18 16:23:45.627 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:74} - imgs=https://p3.pstatp.com/large/3ed10002763d59e522cb
+ 2017-10-18 16:32:40.597 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:32:41.938 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - 总列表数据总数：count=1
+ 2017-10-18 16:32:41.949 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - ---------------
+ 2017-10-18 16:32:41.949 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - id=6475498273632158222
+ 2017-10-18 16:32:41.949 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350015, summary=[儿媳妇怀的根本就不是儿子的孩子, 但是儿媳妇还没有孩子, 交往后儿子就经常带儿媳妇来家里, 儿子十岁的时候我跟老公离婚了, 可是儿媳妇怀孕了], publishTime=1507694431000, flag=1, keywords=[儿媳妇, 儿子, 孩子, 家里, 房子, 离婚, 结婚, 一起, 怀孕, 起来], dynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}, title=儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发, spiderInfoId=AV8LU0J38-owkfOcKCOH, url=http://toutiao.com/group/6475498273632158222/, processTime=1927, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/3ed10002763d59e522cb" img_width="500" img_height="287" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。</p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。</p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。</p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。</p><p><img src="https://p3.pstatp.com/large/3ed0000277db1dbae93f" img_width="900" img_height="505" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。</p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！</p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。</p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。</p><p><img src="https://p3.pstatp.com/large/3f2600005c89b43c1590" img_width="360" img_height="270" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。</p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。</p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。</p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。</p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！</p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！</p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！</p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！</p><p>儿媳妇怎么可以这样骗我啊！</p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！</p><p>我真的很矛盾！我到底该质问儿媳妇吗？</p></div> </body></html>, itemId=6475498273632158222, domain=news_story, namedEntity={nr=[小三, 才在, 周], ns=[], nt=[养大成人, 才从单位]}, gatherTime=1508309558000, id=6475498273632158222, category=清小缘}
+ 2017-10-18 16:32:41.950 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:219} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:32:41.950 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:221} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:32:41.951 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - ------------------count=1
+ 2017-10-18 16:32:41.951 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:32:41.952 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 并发请求数：finalReq=1
+ 2017-10-18 16:32:42.102 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:32:42.104 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:32:47.502 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:32:47.502 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:32:47.520 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:32:47.525 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:32:47.526 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:32:47.527 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:32:47.527 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:32:47.527 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":1,"detail_source":"清小缘","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":false,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/2c5d000cdf3e02342335","screen_name":"清小缘","id":"5882165988"},"publish_time":1507694431,"source":"清小缘","title":"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发","url":"http:\/\/toutiao.com\/group\/6475498273632158222\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed10002763d59e522cb\" img_width=\"500\" img_height=\"287\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。<\/p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。<\/p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。<\/p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed0000277db1dbae93f\" img_width=\"900\" img_height=\"505\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。<\/p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！<\/p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。<\/p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3f2600005c89b43c1590\" img_width=\"360\" img_height=\"270\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。<\/p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。<\/p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。<\/p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。<\/p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！<\/p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！<\/p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！<\/p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！<\/p><p>儿媳妇怎么可以这样骗我啊！<\/p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！<\/p><p>我真的很矛盾！我到底该质问儿媳妇吗？<\/p><\/div>"}
+ 2017-10-18 16:32:47.528 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6475498273632158222
+ 2017-10-18 16:32:47.666 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:82} - DynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}
+ 2017-10-18 16:33:54.547 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:33:54.743 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - 总列表数据总数：count=1
+ 2017-10-18 16:33:54.754 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - ---------------
+ 2017-10-18 16:33:54.754 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - id=6478081432441848334
+ 2017-10-18 16:33:54.754 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[食用红枣是很好的食材, 红枣虽好但不要盲目食用一、不宜和黄瓜或萝卜一起食用萝卜会有抗热血酸酶, 下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌, 糖尿病患者不宜食用红枣气味甘、辛、热, 可见红枣有着很好的美容作用], publishTime=1508295870000, flag=1, keywords=[红枣, 食用, 不宜, 寒热, 维生素, 美容, 盲目, 容易, 适合, 不可], dynamicFields={imgs=[]}, title=提醒，红枣虽好但不要盲目, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478081432441848334/, processTime=3154, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/40160002bbbc6f3de30a" img_width="1200" img_height="797" inline="0" alt="提醒，红枣虽好但不要盲目" onerror="javascript:errorimg.call(this);"></p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说“一日吃仨枣，一辈子不显老”，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！</p><p>提醒！红枣虽好但不要盲目食用</p><p>一、不宜和黄瓜或萝卜一起食用</p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。</p><p>二、不可过量</p><p>本草纲目中说、“多食令人寒热，凡羸瘦者不可食。”脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。</p></div> </body></html>, itemId=6478081432441848334, domain=news_regimen, namedEntity={nr=[都是, 辛, 都会], ns=[], nt=[哪些人, 一下哪些人]}, gatherTime=1508309552000, id=6478081432441848334, category=冰山下的火种}
+ 2017-10-18 16:33:54.755 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:219} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:33:54.755 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:221} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:33:54.756 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - ------------------count=1
+ 2017-10-18 16:33:54.756 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:33:54.757 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 并发请求数：finalReq=1
+ 2017-10-18 16:33:54.912 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:33:54.914 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:34:02.099 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:34:02.099 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:34:02.116 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:34:02.121 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:34:02.121 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:34:02.122 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:34:02.122 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:34:02.122 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"冰山下的火种","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/39b100040a5bf888017f","screen_name":"冰山下的火种","id":"1577953458312206"},"publish_time":1508295870,"source":"冰山下的火种","title":"提醒，红枣虽好但不要盲目","url":"http:\/\/toutiao.com\/group\/6478081432441848334\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/40160002bbbc6f3de30a\" img_width=\"1200\" img_height=\"797\" inline=\"0\" alt=\"提醒，红枣虽好但不要盲目\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说\u201C一日吃仨枣，一辈子不显老\u201D，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！<\/p><p>提醒！红枣虽好但不要盲目食用<\/p><p>一、不宜和黄瓜或萝卜一起食用<\/p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。<\/p><p>二、不可过量<\/p><p>本草纲目中说、\u201C多食令人寒热，凡羸瘦者不可食。\u201D脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。<\/p><\/div>"}
+ 2017-10-18 16:34:02.122 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478081432441848334
+ 2017-10-18 16:34:02.247 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:82} - DynamicFields={imgs=[]}
+ 2017-10-18 16:34:46.223 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:34:46.400 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - 总列表数据总数：count=1
+ 2017-10-18 16:34:46.411 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - ---------------
+ 2017-10-18 16:34:46.411 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - id=6478081432441848334
+ 2017-10-18 16:34:46.411 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[食用红枣是很好的食材, 红枣虽好但不要盲目食用一、不宜和黄瓜或萝卜一起食用萝卜会有抗热血酸酶, 下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌, 糖尿病患者不宜食用红枣气味甘、辛、热, 可见红枣有着很好的美容作用], publishTime=1508295870000, flag=1, keywords=[红枣, 食用, 不宜, 寒热, 维生素, 美容, 盲目, 容易, 适合, 不可], dynamicFields={imgs=[]}, title=提醒，红枣虽好但不要盲目, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478081432441848334/, processTime=3154, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/40160002bbbc6f3de30a" img_width="1200" img_height="797" inline="0" alt="提醒，红枣虽好但不要盲目" onerror="javascript:errorimg.call(this);"></p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说“一日吃仨枣，一辈子不显老”，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！</p><p>提醒！红枣虽好但不要盲目食用</p><p>一、不宜和黄瓜或萝卜一起食用</p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。</p><p>二、不可过量</p><p>本草纲目中说、“多食令人寒热，凡羸瘦者不可食。”脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。</p></div> </body></html>, itemId=6478081432441848334, domain=news_regimen, namedEntity={nr=[都是, 辛, 都会], ns=[], nt=[哪些人, 一下哪些人]}, gatherTime=1508309552000, id=6478081432441848334, category=冰山下的火种}
+ 2017-10-18 16:34:46.412 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:219} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:34:46.412 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:221} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:34:46.413 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - ------------------count=1
+ 2017-10-18 16:34:46.413 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:34:46.413 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 并发请求数：finalReq=1
+ 2017-10-18 16:34:46.558 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:34:46.560 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:34:51.950 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:34:51.950 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:34:51.967 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:34:51.971 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:34:51.972 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:34:51.973 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:34:51.973 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:34:51.973 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"冰山下的火种","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/39b100040a5bf888017f","screen_name":"冰山下的火种","id":"1577953458312206"},"publish_time":1508295870,"source":"冰山下的火种","title":"提醒，红枣虽好但不要盲目","url":"http:\/\/toutiao.com\/group\/6478081432441848334\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/40160002bbbc6f3de30a\" img_width=\"1200\" img_height=\"797\" inline=\"0\" alt=\"提醒，红枣虽好但不要盲目\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说\u201C一日吃仨枣，一辈子不显老\u201D，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！<\/p><p>提醒！红枣虽好但不要盲目食用<\/p><p>一、不宜和黄瓜或萝卜一起食用<\/p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。<\/p><p>二、不可过量<\/p><p>本草纲目中说、\u201C多食令人寒热，凡羸瘦者不可食。\u201D脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。<\/p><\/div>"}
+ 2017-10-18 16:34:51.973 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478081432441848334
+ 2017-10-18 16:35:52.196 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:35:52.366 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - 总列表数据总数：count=1
+ 2017-10-18 16:35:52.377 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - ---------------
+ 2017-10-18 16:35:52.377 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - id=6478081432441848334
+ 2017-10-18 16:35:52.378 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[食用红枣是很好的食材, 红枣虽好但不要盲目食用一、不宜和黄瓜或萝卜一起食用萝卜会有抗热血酸酶, 下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌, 糖尿病患者不宜食用红枣气味甘、辛、热, 可见红枣有着很好的美容作用], publishTime=1508295870000, flag=1, keywords=[红枣, 食用, 不宜, 寒热, 维生素, 美容, 盲目, 容易, 适合, 不可], dynamicFields={imgs=[]}, title=提醒，红枣虽好但不要盲目, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478081432441848334/, processTime=3154, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/40160002bbbc6f3de30a" img_width="1200" img_height="797" inline="0" alt="提醒，红枣虽好但不要盲目" onerror="javascript:errorimg.call(this);"></p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说“一日吃仨枣，一辈子不显老”，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！</p><p>提醒！红枣虽好但不要盲目食用</p><p>一、不宜和黄瓜或萝卜一起食用</p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。</p><p>二、不可过量</p><p>本草纲目中说、“多食令人寒热，凡羸瘦者不可食。”脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。</p></div> </body></html>, itemId=6478081432441848334, domain=news_regimen, namedEntity={nr=[都是, 辛, 都会], ns=[], nt=[哪些人, 一下哪些人]}, gatherTime=1508309552000, id=6478081432441848334, category=冰山下的火种}
+ 2017-10-18 16:35:52.378 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:219} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:35:52.379 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:221} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:35:52.379 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - ------------------count=1
+ 2017-10-18 16:35:52.380 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:35:52.380 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 并发请求数：finalReq=1
+ 2017-10-18 16:35:52.534 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:35:52.536 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478081432441848334/info/
+ 2017-10-18 16:35:57.910 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:35:57.910 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:35:57.928 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:35:57.932 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:35:57.934 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:35:57.934 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:35:57.934 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:35:57.934 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"冰山下的火种","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/39b100040a5bf888017f","screen_name":"冰山下的火种","id":"1577953458312206"},"publish_time":1508295870,"source":"冰山下的火种","title":"提醒，红枣虽好但不要盲目","url":"http:\/\/toutiao.com\/group\/6478081432441848334\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/40160002bbbc6f3de30a\" img_width=\"1200\" img_height=\"797\" inline=\"0\" alt=\"提醒，红枣虽好但不要盲目\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>食用红枣是很好的食材，适当的食用可以起到美容养颜，保健养生的功效，俗话说\u201C一日吃仨枣，一辈子不显老\u201D，可见红枣有着很好的美容作用。那么你知道哪些人不适合吃红枣么?红枣虽好，但是如果盲目的食用的话，很可能会影响到身体的健康。下面我们为大家介绍一下哪些人不适合吃红枣及食用红枣的禁忌！<\/p><p>提醒！红枣虽好但不要盲目食用<\/p><p>一、不宜和黄瓜或萝卜一起食用<\/p><p>萝卜会有抗热血酸酶，黄瓜含有维生素分解酶，这两种成分都是红枣的克星，都会破坏红枣的维生素，从而导致红枣的营养价值流失。<\/p><p>二、不可过量<\/p><p>本草纲目中说、\u201C多食令人寒热，凡羸瘦者不可食。\u201D脘腹胀满、食欲不振者不宜食用。因其含糖量较高，糖尿病患者不宜食用红枣气味甘、辛、热，性偏湿热，容易生痰生湿。痰湿壅盛的人多食红枣以后，原先的症状容易加重，出现寒热口渴、胃胀等不良反应。吃枣还要注意保护好牙齿。每天吃枣以不超过50克为宜。<\/p><\/div>"}
+ 2017-10-18 16:35:57.936 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478081432441848334
+ 2017-10-18 16:35:58.065 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:83} - DynamicFields={imgs=[https://p3.pstatp.com/large/40160002bbbc6f3de30a]}
+ 2017-10-18 16:37:05.637 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:37:06.413 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - 总列表数据总数：count=1
+ 2017-10-18 16:37:06.425 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - ---------------
+ 2017-10-18 16:37:06.425 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - id=6475498273632158222
+ 2017-10-18 16:37:06.425 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350015, summary=[儿媳妇怀的根本就不是儿子的孩子, 但是儿媳妇还没有孩子, 交往后儿子就经常带儿媳妇来家里, 儿子十岁的时候我跟老公离婚了, 可是儿媳妇怀孕了], publishTime=1507694431000, flag=1, keywords=[儿媳妇, 儿子, 孩子, 家里, 房子, 离婚, 结婚, 一起, 怀孕, 起来], dynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}, title=儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发, spiderInfoId=AV8LU0J38-owkfOcKCOH, url=http://toutiao.com/group/6475498273632158222/, processTime=1927, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p><img src="https://p3.pstatp.com/large/3ed10002763d59e522cb" img_width="500" img_height="287" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。</p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。</p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。</p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。</p><p><img src="https://p3.pstatp.com/large/3ed0000277db1dbae93f" img_width="900" img_height="505" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。</p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！</p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。</p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。</p><p><img src="https://p3.pstatp.com/large/3f2600005c89b43c1590" img_width="360" img_height="270" inline="0" alt="儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发" onerror="javascript:errorimg.call(this);"></p><p>图片来源于网络</p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。</p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。</p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。</p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。</p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！</p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！</p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！</p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！</p><p>儿媳妇怎么可以这样骗我啊！</p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！</p><p>我真的很矛盾！我到底该质问儿媳妇吗？</p></div> </body></html>, itemId=6475498273632158222, domain=news_story, namedEntity={nr=[小三, 才在, 周], ns=[], nt=[养大成人, 才从单位]}, gatherTime=1508309558000, id=6475498273632158222, category=清小缘}
+ 2017-10-18 16:37:06.426 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:219} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:37:06.426 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:221} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:37:06.428 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - ------------------count=1
+ 2017-10-18 16:37:06.428 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:37:06.428 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 并发请求数：finalReq=1
+ 2017-10-18 16:37:06.586 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:37:06.589 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6475498273632158222/info/
+ 2017-10-18 16:37:12.488 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:37:12.488 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:37:12.510 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:37:12.516 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:37:12.517 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:37:12.517 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:37:12.518 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:37:12.518 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":1,"detail_source":"清小缘","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":false,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/2c5d000cdf3e02342335","screen_name":"清小缘","id":"5882165988"},"publish_time":1507694431,"source":"清小缘","title":"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发","url":"http:\/\/toutiao.com\/group\/6475498273632158222\/","content":"<div><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed10002763d59e522cb\" img_width=\"500\" img_height=\"287\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>我跟儿子相依为命十几年了，母子感情很好，儿子十岁的时候我跟老公离婚了，当时因为老公出轨了，还跟小三有了一个孩子，而小三那个孩子却是个有病的，老公看小三跟那孩子可怜硬是要跟我离婚，离婚的时候给了我一套房子，还有一笔钱。<\/p><p>那笔钱我一直我不敢乱花，有三十万块钱，离婚后我没有自暴自弃，将孩子养大成人，直到他结婚，我才从单位退休。<\/p><p>儿子是个争气的，他聪明能干，毕业后很他几个朋友合伙开了一家公司，后来越做越好，自己买了房子，也结婚了。<\/p><p>儿媳妇是儿子大学的同学，两人是毕业后才在一起的，交往后儿子就经常带儿媳妇来家里，我对儿媳妇也很满意，是个不错的女孩子。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3ed0000277db1dbae93f\" img_width=\"900\" img_height=\"505\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>他们夫妻两人的感情也很好，结婚一年了，但是儿媳妇还没有孩子，儿子说是还不想那么早生孩子，我也没有催他们。<\/p><p>没想到的是老天会这样对我，儿子却出来车祸去世了！<\/p><p>得知这个消息我整个人晕倒了过去，醒来后抱着儿媳妇两人痛哭起来。<\/p><p>浑浑噩噩的办理好儿子的后事，我整个人还是没有精神，儿子没了，就剩下我一个人了，我甚至想跟儿子一起去，可是儿媳妇怀孕了。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/3f2600005c89b43c1590\" img_width=\"360\" img_height=\"270\" inline=\"0\" alt=\"儿子意外去世，儿媳妇却怀孕，无意看到她房里一东西我气得病发\" onerror=\"javascript:errorimg.call(this);\"><\/p><p>图片来源于网络<\/p><p>这个消息对我来说就想救命稻草一样，这是儿子留在世上最后的血脉啊！我要努力振作起来，看着这个孩子出生，然后养大成人。<\/p><p>我搬去儿子的家里，跟儿媳妇一起住，还把当初离婚前夫留给我的那三十万拿给儿媳妇。<\/p><p>我让儿媳妇辞职，不让她出去工作，好好留在家里养胎。<\/p><p>最近儿媳妇出了娘家一趟，要待两三天才回来，我一个人在家里闲着无聊，就收拾房子，想大扫除一下。<\/p><p>直到我打扫儿媳妇的房间，在她的衣柜里面看到一张怀孕单！我整个人愣住了！<\/p><p>怀孕单上面清清楚楚的写着儿媳妇怀孕是七周！而儿媳妇告诉我她已经怀孕快三个月了，儿子已经去世四个月了！<\/p><p>这怎么可能！儿媳妇怀的根本就不是儿子的孩子！<\/p><p>我气得脑袋疼，血压飙升！老毛病都犯了！自己挣扎着打了救护车！<\/p><p>儿媳妇怎么可以这样骗我啊！<\/p><p>我想拆穿她的谎言，可是我又想当做不知道这件事情，有个盼头可以活下去！<\/p><p>我真的很矛盾！我到底该质问儿媳妇吗？<\/p><\/div>"}
+ 2017-10-18 16:37:12.518 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6475498273632158222
+ 2017-10-18 16:37:14.171 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:83} - DynamicFields={imgs=[https://p3.pstatp.com/list/3ed10002763d59e522cb,https://p3.pstatp.com/list/3ed0000277db1dbae93f,https://p3.pstatp.com/list/3f2600005c89b43c1590]}
+ 2017-10-18 16:38:09.997 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 16:38:21.083 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:209} - 总列表数据总数：count=1
+ 2017-10-18 16:38:21.096 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:216} - ---------------
+ 2017-10-18 16:38:21.096 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:217} - id=6478116421921407501
+ 2017-10-18 16:38:21.097 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:218} - webPage={spiderUUID=aaaafc39-6ff7-4a95-8024-b85d99350012, summary=[放入腌好的鱼两面煎金黄, 鱼则是进补的好水产饮食, 一般畜肉的脂肪多为饱和脂肪酸, 而鱼的脂肪却含有多种不饱和脂肪酸, 营养价值极高1、鱼处理干净后划刀撒盐腌半小时以上], publishTime=1508304016000, flag=1, keywords=[放入, 营养, 价值, 极高, 赤小豆, 进补, 南瓜, 甘草, 脂肪, 荆芥], dynamicFields={imgs=[]}, title=自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香, spiderInfoId=AV8LUB3P8-owkfOcKCOE, url=http://toutiao.com/group/6478116421921407501/, processTime=6333, content=<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="apple-mobile-web-app-capable" content="yes"></meta>
+        <meta http-equiv="Cache-Control" name="no-store"></meta>
+        <meta content="telephone=no" name="format-detection"></meta>
+        <meta content="email=no" name="format-detection"></meta>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="target-densitydpi=device-dpi,width=decive-width,initial-scale=1,maximum-scale=1"></meta>
+        <title></title>
+        <style>
+            html,body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            html, body,* {
+                font-family: "微软雅黑";
+                line-height: 24px;
+                font-size: 16px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            body {
+            }
+            .text-center {
+                text-align: center;
+            }
+            ul,li {
+                list-style: none;
+            }
+            ul {
+                margin: 0;
+                padding: 0 10px;
+            }
+            img { height: auto; width: auto\9; width:100%; }
+        </style>
+    </head>
+<body> <div><p>“冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。</p><p><img src="https://p3.pstatp.com/large/40120003113f1e223319" img_width="574" img_height="765" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p class="pgc-img-caption">营养价值极高</p><p>1、鱼处理干净后划刀撒盐腌半小时以上。</p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。</p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。</p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。</p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。</p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火</p><p><img src="https://p3.pstatp.com/large/4017000311b8632ea836" img_width="765" img_height="574" inline="0" alt="自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香" onerror="javascript:errorimg.call(this);"></p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。</span><br></p></div> </body></html>, itemId=6478116421921407501, domain=news_regimen, namedEntity={nr=[盛三, 鱼再, 鱼则, 盖盖], ns=[], nt=[]}, gatherTime=1508309556000, id=6478116421921407501, category=佰叶叹}
+ 2017-10-18 16:38:21.097 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:219} - 不存在详情数据，添加抓取内容详情url=https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:38:21.097 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:221} - ================即将爬虫url详情内容的url列表==============
+ 2017-10-18 16:38:21.098 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:236} - ------------------count=1
+ 2017-10-18 16:38:21.099 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:238} - https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:38:21.099 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:243} - 并发请求数：finalReq=1
+ 2017-10-18 16:38:21.255 [Thread-0] [INFO ]  us.codecraft.webmagic.Spider {Spider.java:306} - Spider m.toutiao.com started!
+ 2017-10-18 16:38:21.258 [pool-2-thread-1] [INFO ]  us.codecraft.webmagic.downloader.HttpClientDownloader {HttpClientDownloader.java:88} - downloading page https://m.toutiao.com/i6478116421921407501/info/
+ 2017-10-18 16:38:34.830 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:59} - 详情数据解析.......>>>
+ 2017-10-18 16:38:34.831 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:60} - 第一层解析...
+ 2017-10-18 16:38:34.849 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:61} - success=true
+ 2017-10-18 16:38:34.854 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:63} - data.size()=1
+ 2017-10-18 16:38:34.855 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:64} - ============
+ 2017-10-18 16:38:34.855 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:65} - 第二层解析...
+ 2017-10-18 16:38:34.856 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:67} - ---------------
+ 2017-10-18 16:38:34.856 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
+ 2017-10-18 16:38:34.856 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
+ 2017-10-18 16:38:35.925 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:83} - DynamicFields={imgs=[https://p3.pstatp.com/large/40120003113f1e223319]}
  

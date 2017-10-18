@@ -2,6 +2,7 @@ package com.minbo.javademo.elasticsearch.toutiao;
 
 import java.io.IOException;
 import java.text.ParseException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -15,6 +16,8 @@ import org.elasticsearch.common.xcontent.XContentFactory;
 import com.minbo.javademo.elasticsearch.nlp.HANLPExtractor;
 import com.minbo.javademo.elasticsearch.nlp.NLPExtractor;
 import com.minbo.javademo.utils.StrUtil;
+
+import us.codecraft.webmagic.selector.JsonPathSelector;
 
 public class ProcessData {
 	
@@ -66,13 +69,24 @@ public class ProcessData {
 		}
 	}
 
-	public void detailPage(String id, String content, Client client) throws IOException, ParseException {
+	public void detailPage(String id, String content, Client client, String imgs) throws IOException, ParseException {
 		ToutiaoDetail tDetail = new ToutiaoDetail();
 		Webpage webPage = tDetail.getMainInfo(id);
+		
 		if(webPage.getFlag() == 1) {
 			logger.info("已存在详情数据了，重复记录，跳过处理。webPage.id = " + webPage.getId());
 		}else {
 			logger.info("不存在详情数据，新处理");
+			
+			//当列表没有图时（长度为9，即为空），取详情内容第一张图
+			if(webPage.getDynamicFields() == null || webPage.getDynamicFields().toString().length() <= 9) {
+				if(!StrUtil.null2Str(imgs).equals("")) {
+					Map<String, Object> dynamicFields = new HashMap<>();
+					dynamicFields.put("imgs", "[" + imgs + "]");
+					webPage.setDynamicFields(dynamicFields);
+				}
+			}
+			
 			NLPExtractor extractor = new HANLPExtractor();
 //			NLPExtractor summaryExtractor = new HANLPExtractor();
 //			NLPExtractor namedEntitiesExtractor = new HANLPExtractor();

@@ -70,10 +70,18 @@ public class ToutiaoDetail implements PageProcessor {
 	    			String content = new JsonPathSelector("$.content").select(result);
 	    			String id = ToutiaoDetail.getId(page.getRequest().getUrl());
 	    			logger.info("id=" + id);
+	    			
+	    			//处理详情内容图片，取出现的第一张，作为列表中显示
+	    			String imgs = page.getHtml().xpath("//p//img/@src").get().toString();
+	    			if(!StrUtil.null2Str(imgs).equals("")) {
+	    				imgs = imgs.substring(2, imgs.length() - 2);
+	    			}
+	    			
 				ProcessData pData = new ProcessData();
-				pData.detailPage(id, content, client);;
+				pData.detailPage(id, content, client, imgs);;
+	    			
 	    		}
-    		} catch (IOException | ParseException e) {
+    		} catch (Exception e) {
 			logger.error("详情数据解析异常：" + e.getMessage(), e);
 		}
     }
@@ -161,11 +169,15 @@ public class ToutiaoDetail implements PageProcessor {
 		
 		//指定字段进行搜索
 //		QueryBuilder qb1 = termQuery("domain", tag);
+		QueryBuilder qb1 = termQuery("id", "6478116421921407501");
+//		QueryBuilder qb1 = termQuery("id", "6478081432441848334");
+//		QueryBuilder qb1 = termQuery("id", "6475498273632158222");
+		
 		
 		//组合查询搜索
-		QueryBuilder qb1 = boolQuery()
-				.must(termQuery("domain", tag)) 
-                .must(termQuery("flag", 0));
+//		QueryBuilder qb1 = boolQuery()
+				//.must(termQuery("domain", tag)) 
+                //.must(termQuery("flag", 0));
 		
 		//组合查询搜索
 //		QueryBuilder qb2 = boolQuery()
