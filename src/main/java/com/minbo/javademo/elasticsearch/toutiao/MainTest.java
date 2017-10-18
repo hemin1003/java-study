@@ -27,7 +27,7 @@ public class MainTest {
 			// 获取开始时间
 			long start = System.currentTimeMillis();
 			
-			ThreadBatch mainClass = new ThreadBatch("news_hot");
+			ThreadBatch mainClass = new ThreadBatch("news_story");
 			mainClass.start();
 			
 //			logger.info("跑前半部分标签...");

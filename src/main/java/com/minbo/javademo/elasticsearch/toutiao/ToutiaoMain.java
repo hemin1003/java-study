@@ -101,14 +101,15 @@ public class ToutiaoMain implements PageProcessor {
 				
 				logger.info("==================解析列表数据 end=====================");
 				logger.info("======================================================");
-				try {
-					logger.info("===================================================");
-					logger.info("==================开始列表数据入库====================");
-					ProcessData pData = new ProcessData();
-					pData.mainPage(webPage);
-				} catch (IOException | ParseException e) {
-					e.printStackTrace();
-				}
+				
+//				try {
+//					logger.info("===================================================");
+//					logger.info("==================开始列表数据入库====================");
+//					ProcessData pData = new ProcessData();
+//					pData.mainPage(webPage);
+//				} catch (IOException | ParseException e) {
+//					e.printStackTrace();
+//				}
 				
 			}
 		}
