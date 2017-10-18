@@ -14,11 +14,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.apache.log4j.Logger;
+import org.elasticsearch.action.delete.DeleteResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.InetSocketTransportAddress;
 import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.rest.RestStatus;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 
@@ -169,15 +171,16 @@ public class ToutiaoDetail implements PageProcessor {
 		
 		//指定字段进行搜索
 //		QueryBuilder qb1 = termQuery("domain", tag);
-		QueryBuilder qb1 = termQuery("id", "6478116421921407501");
+//		QueryBuilder qb1 = termQuery("id", "6478116421921407501");
 //		QueryBuilder qb1 = termQuery("id", "6478081432441848334");
 //		QueryBuilder qb1 = termQuery("id", "6475498273632158222");
+//		QueryBuilder qb1 = termQuery("id", "6478162468488085773");
 		
 		
 		//组合查询搜索
-//		QueryBuilder qb1 = boolQuery()
-				//.must(termQuery("domain", tag)) 
-                //.must(termQuery("flag", 0));
+		QueryBuilder qb1 = boolQuery()
+				.must(termQuery("domain", tag)) 
+                .must(termQuery("flag", 1));
 		
 		//组合查询搜索
 //		QueryBuilder qb2 = boolQuery()
@@ -206,19 +209,30 @@ public class ToutiaoDetail implements PageProcessor {
 		}
         
 		SearchHits hits = response.getHits();  
-		logger.info("总列表数据总数：count=" + hits.getTotalHits());
+		logger.info("tag=" + tag + "，总列表数据总数：count=" + hits.getTotalHits());
 		if(hits.getTotalHits() > 0) {
 			String [] strArray = new String [(int) hits.getTotalHits()];
 			for (int i = 0; i < hits.getTotalHits(); i++) {
 				String id = hits.getAt(i).getSource().get("id").toString();
-				String url = "https://m.toutiao.com/i" + hits.getAt(i).getSource().get("id") + "/info/";
-				strArray[i] = url;
-				logger.info("---------------");
-				logger.info("id=" + id);
-				logger.info("webPage=" + hits.getAt(i).getSource().toString());
-				logger.info("不存在详情数据，添加抓取内容详情url=" + strArray[i]);
+//				String url = "https://m.toutiao.com/i" + hits.getAt(i).getSource().get("id") + "/info/";
+//				strArray[i] = url;
+//				logger.info("---------------");
+//				logger.info("id=" + id);
+//				logger.info("webPage=" + hits.getAt(i).getSource().toString());
+//				logger.info("不存在详情数据，添加抓取内容详情url=" + strArray[i]);
+				
+				String content = hits.getAt(i).getSource().get("content").toString();
+				content = content.replace(Utils.HTML_PREFIX, "");
+				content = content.replace(Utils.HTML_SUFFIX, "");
+				if(StrUtil.null2Str(content).equals("")) {
+					logger.info("tag=" + tag + "，缺失内容的文章id=" + id);
+					DeleteResponse result = client.prepareDelete("commons", "webpage", id).execute().actionGet();
+					RestStatus status = result.status();
+					System.out.println("tag=" + tag + "，status = " + status);
+				}
 			}
-			logger.info("================即将爬虫url详情内容的url列表==============");
+			
+			logger.info("tag=" + tag + "================即将爬虫url详情内容的url列表==============");
 			int count = 0;
 			for (String string : strArray) {
 				if(!StrUtil.null2Str(string).equals("")) {
@@ -233,19 +247,19 @@ public class ToutiaoDetail implements PageProcessor {
 					index++;
 				}
 			}
-			logger.info("------------------count=" + count);
+			logger.info("tag=" + tag + "，------------------count=" + count);
 			for (String string : strArrayTmp) {
 				logger.info(string);
 			}
 			
-			if(strArrayTmp.length > 0) {
-				int finalReq = count>MainTest.THREAD_COUNT ? MainTest.THREAD_COUNT:count;
-				logger.info("并发请求数：finalReq=" + finalReq);
-				Spider.create(new ToutiaoDetail()).addUrl(strArrayTmp).thread(finalReq).run();
-			}
-			logger.info("获得数据完成");
+//			if(strArrayTmp.length > 0) {
+//				int finalReq = count>MainTest.THREAD_COUNT ? MainTest.THREAD_COUNT:count;
+//				logger.info("并发请求数：finalReq=" + finalReq);
+//				Spider.create(new ToutiaoDetail()).addUrl(strArrayTmp).thread(finalReq).run();
+//			}
+			logger.info("tag=" + tag + "，获得数据完成");
 		}
 		long end=System.currentTimeMillis(); //获取结束时间
-		logger.info("程序运行时间： "+(end-start)+" ms");
+		logger.info("tag=" + tag + "，程序运行时间： "+(end-start)+" ms");
     }
 }

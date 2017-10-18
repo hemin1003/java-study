@@ -1671,4 +1671,179 @@
  2017-10-18 16:38:34.856 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:68} - 第1条：{"comment_count":0,"detail_source":"佰叶叹","is_original":false,"is_pgc_article":true,"video_play_count":0,"media_user":{"no_display_pgc_icon":true,"avatar_url":"https:\/\/p3.pstatp.com\/thumb\/3e5a00001a43e11d044d","screen_name":"佰叶叹","id":"1580154920087565"},"publish_time":1508304016,"source":"佰叶叹","title":"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香","url":"http:\/\/toutiao.com\/group\/6478116421921407501\/","content":"<div><p>\u201C冬季是体弱者进补的好时机，鱼则是进补的好水产饮食，不仅味道鲜美，而且营养价值极高。一般畜肉的脂肪多为饱和脂肪酸，而鱼的脂肪却含有多种不饱和脂肪酸，具有很好降胆固醇的作用。所以胖人吃鱼肉较好，既能避免肥胖，又能防止动脉硬化和冠心病的发生。<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/40120003113f1e223319\" img_width=\"574\" img_height=\"765\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p class=\"pgc-img-caption\">营养价值极高<\/p><p>1、鱼处理干净后划刀撒盐腌半小时以上。<\/p><p>2、准备材料，葱一部分切细丝装饰，一部分切粗丝。蒜，姜红辣椒切片。<\/p><p>3、煎锅放1勺油，放入腌好的鱼两面煎金黄。<\/p><p>4、炒锅放半勺油，烧热后放入粗葱丝，姜蒜片爆香。<\/p><p>5、加水倒入生抽，大火烧开后中火炖5分钟。<\/p><p>6、放入煎好的鱼再一次烧开后，盖盖小火10分钟，汤汁收至盛三分之一，停火<\/p><p><img src=\"https:\/\/p3.pstatp.com\/large\/4017000311b8632ea836\" img_width=\"765\" img_height=\"574\" inline=\"0\" alt=\"自己动手，丰衣足食，钓回来的鲤鱼，这样做出来味道佷鲜香\" onerror=\"javascript:errorimg.call(this);\"><\/p><p><span>鲤鱼忌与绿豆、芋头、牛羊油、猪肝、鸡肉、荆芥、甘草、南瓜、赤小豆和狗肉同食，也忌与中药中的朱砂同服。<\/span><br><\/p><\/div>"}
  2017-10-18 16:38:34.856 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:72} - id=6478116421921407501
  2017-10-18 16:38:35.925 [pool-2-thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ProcessData {ProcessData.java:83} - DynamicFields={imgs=[https://p3.pstatp.com/large/40120003113f1e223319]}
+ 2017-10-18 17:50:42.582 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_society，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 17:50:42.753 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - 总列表数据总数：count=1
+ 2017-10-18 17:50:42.763 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:226} - 缺失内容的文章id=6478162468488085773
+ 2017-10-18 17:51:29.852 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_society，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 17:53:11.536 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_society，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 17:54:17.497 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:168} - tag=news_society，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 17:55:31.371 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:210} - 总列表数据总数：count=1551
+ 2017-10-18 17:55:31.517 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:226} - 缺失内容的文章id=6477541457505812749
+ 2017-10-18 17:55:31.541 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:226} - 缺失内容的文章id=6478162468488085773
+ 2017-10-18 18:14:44.649 [main] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.MainAgain {MainAgain.java:23} - 跑前半部分标签...
+ 2017-10-18 18:14:44.653 [main] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.MainAgain {MainAgain.java:30} - 休息十秒
+ 2017-10-18 18:14:54.659 [main] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.MainAgain {MainAgain.java:36} - 跑后半部分标签...
+ 2017-10-18 18:15:01.367 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_fashion，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-15] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_food，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_history，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_discovery，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_military，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-1] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_society，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-16] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_story，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_tech，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_sports，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_hot，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_finance，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_car，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_game，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_travel，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_baby，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:15:01.367 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_entertainment，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:17:53.697 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_hot，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:21:44.200 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_hot，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:23:08.792 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_hot，总列表数据总数：count=1435
+ 2017-10-18 18:23:08.869 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_hot，缺失内容的文章id=6460757526827761933
+ 2017-10-18 18:23:09.033 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_hot，缺失内容的文章id=6475549569894580493
+ 2017-10-18 18:23:09.148 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_hot，缺失内容的文章id=6431723994398851329
+ 2017-10-18 18:23:09.200 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_hot================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:23:09.202 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_hot，------------------count=0
+ 2017-10-18 18:23:09.203 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_hot，获得数据完成
+ 2017-10-18 18:23:09.203 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_hot，程序运行时间： 85004 ms
+ 2017-10-18 18:24:40.521 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_society，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:25:52.563 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_society，总列表数据总数：count=1552
+ 2017-10-18 18:25:52.652 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_society，缺失内容的文章id=6477888644420993294
+ 2017-10-18 18:25:52.779 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_society================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:25:52.780 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_society，------------------count=0
+ 2017-10-18 18:25:52.780 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_society，获得数据完成
+ 2017-10-18 18:25:52.781 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_society，程序运行时间： 72261 ms
+ 2017-10-18 18:27:42.101 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_entertainment，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:29:15.345 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_entertainment，总列表数据总数：count=1934
+ 2017-10-18 18:29:15.432 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_entertainment，缺失内容的文章id=6418812119520641282
+ 2017-10-18 18:29:15.499 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_entertainment，缺失内容的文章id=6474068663338008846
+ 2017-10-18 18:29:15.533 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_entertainment，缺失内容的文章id=6478088741779931406
+ 2017-10-18 18:29:15.568 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_entertainment，缺失内容的文章id=6478072491267850509
+ 2017-10-18 18:29:15.569 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_entertainment，缺失内容的文章id=6478130853699387662
+ 2017-10-18 18:29:15.599 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_entertainment================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:29:15.601 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_entertainment，------------------count=0
+ 2017-10-18 18:29:15.601 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_entertainment，获得数据完成
+ 2017-10-18 18:29:15.601 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_entertainment，程序运行时间： 93501 ms
+ 2017-10-18 18:34:18.892 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_military，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:35:38.083 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_military，总列表数据总数：count=1657
+ 2017-10-18 18:35:38.214 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_military，缺失内容的文章id=6477759521660862734
+ 2017-10-18 18:35:38.307 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_military，缺失内容的文章id=6471508190138728718
+ 2017-10-18 18:35:38.447 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_military，缺失内容的文章id=6476635663046279438
+ 2017-10-18 18:35:38.498 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_military，缺失内容的文章id=6477763163856044302
+ 2017-10-18 18:35:38.553 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_military================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:35:38.555 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_military，------------------count=0
+ 2017-10-18 18:35:38.555 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_military，获得数据完成
+ 2017-10-18 18:35:38.555 [Thread-0] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_military，程序运行时间： 79664 ms
+ 2017-10-18 18:36:02.201 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_tech，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:38:02.198 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_car，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:38:27.145 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_tech，总列表数据总数：count=2441
+ 2017-10-18 18:38:27.175 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_tech，缺失内容的文章id=6462237711498477838
+ 2017-10-18 18:38:27.296 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_tech，缺失内容的文章id=6439573174836265218
+ 2017-10-18 18:38:27.341 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_tech，缺失内容的文章id=6476305787101643021
+ 2017-10-18 18:38:27.448 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_tech================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:38:27.450 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_tech，------------------count=0
+ 2017-10-18 18:38:27.450 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_tech，获得数据完成
+ 2017-10-18 18:38:27.451 [Thread-2] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_tech，程序运行时间： 145250 ms
+ 2017-10-18 18:39:47.375 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_car，总列表数据总数：count=1820
+ 2017-10-18 18:39:47.477 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_car，缺失内容的文章id=6470730286656127245
+ 2017-10-18 18:39:47.530 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_car，缺失内容的文章id=6475863319172350221
+ 2017-10-18 18:39:47.593 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_car，缺失内容的文章id=6468950360521179405
+ 2017-10-18 18:39:47.678 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_car================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:39:47.680 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_car，------------------count=0
+ 2017-10-18 18:39:47.680 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_car，获得数据完成
+ 2017-10-18 18:39:47.680 [Thread-3] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_car，程序运行时间： 105482 ms
+ 2017-10-18 18:40:02.191 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_sports，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:41:25.732 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_sports，总列表数据总数：count=1749
+ 2017-10-18 18:41:25.782 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_sports，缺失内容的文章id=6477826337963770126
+ 2017-10-18 18:41:25.965 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_sports================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:41:25.967 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_sports，------------------count=0
+ 2017-10-18 18:41:25.967 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_sports，获得数据完成
+ 2017-10-18 18:41:25.967 [Thread-4] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_sports，程序运行时间： 83776 ms
+ 2017-10-18 18:42:02.185 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_finance，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:44:02.180 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_fashion，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:44:41.485 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_finance，总列表数据总数：count=2419
+ 2017-10-18 18:44:41.507 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6477424836070080781
+ 2017-10-18 18:44:41.577 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6310051056332046849
+ 2017-10-18 18:44:41.655 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6469970853806211341
+ 2017-10-18 18:44:41.742 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6476988798323392781
+ 2017-10-18 18:44:41.847 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6478132939317068046
+ 2017-10-18 18:44:41.930 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6433236956854878465
+ 2017-10-18 18:46:02.177 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_game，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:47:00.961 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_fashion，总列表数据总数：count=1926
+ 2017-10-18 18:47:00.961 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_finance，缺失内容的文章id=6465822701159186701
+ 2017-10-18 18:47:01.009 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_finance================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:47:01.012 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_finance，------------------count=0
+ 2017-10-18 18:47:01.012 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_finance，获得数据完成
+ 2017-10-18 18:47:01.012 [Thread-5] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_finance，程序运行时间： 298827 ms
+ 2017-10-18 18:47:01.149 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_fashion，缺失内容的文章id=6475575518665113869
+ 2017-10-18 18:47:01.226 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_fashion，缺失内容的文章id=6470344502304309518
+ 2017-10-18 18:47:01.277 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_fashion================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:47:01.279 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_fashion，------------------count=0
+ 2017-10-18 18:47:01.280 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_fashion，获得数据完成
+ 2017-10-18 18:47:01.281 [Thread-6] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_fashion，程序运行时间： 179101 ms
+ 2017-10-18 18:47:37.981 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_game，总列表数据总数：count=1293
+ 2017-10-18 18:47:38.004 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_game，缺失内容的文章id=6452200621213745421
+ 2017-10-18 18:47:38.055 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_game，缺失内容的文章id=6454033019865923853
+ 2017-10-18 18:47:38.143 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_game================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:47:38.144 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_game，------------------count=0
+ 2017-10-18 18:47:38.144 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_game，获得数据完成
+ 2017-10-18 18:47:38.144 [Thread-7] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_game，程序运行时间： 95967 ms
+ 2017-10-18 18:48:02.171 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_baby，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:49:29.593 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_baby，总列表数据总数：count=1719
+ 2017-10-18 18:49:29.638 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_baby，缺失内容的文章id=6464730738565579021
+ 2017-10-18 18:49:29.727 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_baby，缺失内容的文章id=6464730665068790030
+ 2017-10-18 18:49:29.774 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_baby================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:49:29.776 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_baby，------------------count=0
+ 2017-10-18 18:49:29.777 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_baby，获得数据完成
+ 2017-10-18 18:49:29.777 [Thread-8] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_baby，程序运行时间： 87606 ms
+ 2017-10-18 18:50:02.165 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_travel，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:52:02.164 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_discovery，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:52:04.568 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_travel，总列表数据总数：count=1522
+ 2017-10-18 18:52:04.609 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_travel，缺失内容的文章id=6477696833782022413
+ 2017-10-18 18:52:05.056 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_travel，缺失内容的文章id=6478132225001914637
+ 2017-10-18 18:52:05.224 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_travel，缺失内容的文章id=6471405856230473997
+ 2017-10-18 18:52:05.753 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_travel================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:52:05.754 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_travel，------------------count=0
+ 2017-10-18 18:52:05.754 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_travel，获得数据完成
+ 2017-10-18 18:52:05.754 [Thread-9] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_travel，程序运行时间： 123589 ms
+ 2017-10-18 18:53:52.197 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_discovery，总列表数据总数：count=1816
+ 2017-10-18 18:53:52.213 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_discovery，缺失内容的文章id=6456643565182255373
+ 2017-10-18 18:53:52.280 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_discovery，缺失内容的文章id=6476273184826982670
+ 2017-10-18 18:53:52.441 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_discovery================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:53:52.442 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_discovery，------------------count=0
+ 2017-10-18 18:53:52.442 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_discovery，获得数据完成
+ 2017-10-18 18:53:52.442 [Thread-10] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_discovery，程序运行时间： 110279 ms
+ 2017-10-18 18:54:02.162 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_regimen，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:56:02.156 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_history，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:56:50.319 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_regimen，总列表数据总数：count=2691
+ 2017-10-18 18:56:50.499 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_regimen================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:56:50.501 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_regimen，------------------count=0
+ 2017-10-18 18:56:50.501 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_regimen，获得数据完成
+ 2017-10-18 18:56:50.501 [Thread-11] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_regimen，程序运行时间： 168339 ms
+ 2017-10-18 18:58:02.153 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_food，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 18:58:14.054 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_history，总列表数据总数：count=1743
+ 2017-10-18 18:58:14.237 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_history================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:58:14.238 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_history，------------------count=0
+ 2017-10-18 18:58:14.239 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_history，获得数据完成
+ 2017-10-18 18:58:14.239 [Thread-12] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_history，程序运行时间： 132083 ms
+ 2017-10-18 18:59:55.994 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_food，总列表数据总数：count=1587
+ 2017-10-18 18:59:56.010 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_food，缺失内容的文章id=6464865711381545229
+ 2017-10-18 18:59:56.167 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_food================即将爬虫url详情内容的url列表==============
+ 2017-10-18 18:59:56.168 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_food，------------------count=0
+ 2017-10-18 18:59:56.168 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_food，获得数据完成
+ 2017-10-18 18:59:56.168 [Thread-13] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_food，程序运行时间： 114015 ms
+ 2017-10-18 19:00:02.149 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:170} - tag=news_story，=============开始获取列表数据进行处理 start=================
+ 2017-10-18 19:01:41.821 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:212} - tag=news_story，总列表数据总数：count=1567
+ 2017-10-18 19:01:41.856 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_story，缺失内容的文章id=6476273249431847181
+ 2017-10-18 19:01:42.047 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_story，缺失内容的文章id=6477761584969023758
+ 2017-10-18 19:01:42.207 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_story，缺失内容的文章id=6364708538987577601
+ 2017-10-18 19:01:42.333 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:228} - tag=news_story，缺失内容的文章id=6477761599225463054
+ 2017-10-18 19:01:42.380 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:235} - tag=news_story================即将爬虫url详情内容的url列表==============
+ 2017-10-18 19:01:42.381 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:250} - tag=news_story，------------------count=0
+ 2017-10-18 19:01:42.382 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:260} - tag=news_story，获得数据完成
+ 2017-10-18 19:01:42.382 [Thread-14] [INFO ]  com.minbo.javademo.elasticsearch.toutiao.ToutiaoDetail {ToutiaoDetail.java:263} - tag=news_story，程序运行时间： 100233 ms
  
