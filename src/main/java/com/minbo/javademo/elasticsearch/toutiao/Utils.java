@@ -8,7 +8,7 @@ import java.util.Map;
 
 public class Utils {
 	
-	public static final String IP = "47.95.29.119";
+	public static final String IP = "127.0.0.1";
 	
 	public static String CHARSET = "UTF-8";
 	

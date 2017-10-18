@@ -78,12 +78,12 @@ public class ThreadBatch extends Thread {
 		logger.info("");
 		logger.info("2. 处理详情页面数据...");
 		
-		try {
-			ToutiaoDetail tDetail = new ToutiaoDetail();
-			tDetail.processDetailInfo(this.myTag);
-		} catch (UnknownHostException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			ToutiaoDetail tDetail = new ToutiaoDetail();
+//			tDetail.processDetailInfo(this.myTag);
+//		} catch (UnknownHostException e) {
+//			e.printStackTrace();
+//		}
 		
 		try {
 			logger.info("----------");
