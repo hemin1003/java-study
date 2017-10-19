@@ -20,16 +20,19 @@ public class MainAgain {
 			System.out.println();
 			System.out.println("2. 处理详情页面数据...");
 			
-			for (int i = 3; i < Tags.tagList.length; i++) {
-				ThreadBatchDetail detail = new ThreadBatchDetail(Tags.tagList[i].toString());
-				detail.start();
-				
-				try {
-					Thread.sleep(120000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
+			ThreadBatchDetail detail = new ThreadBatchDetail(Tags.tagList[0]);
+			detail.start();
+			
+//			for (int i = 3; i < Tags.tagList.length; i++) {
+//				ThreadBatchDetail detail = new ThreadBatchDetail(Tags.tagList[i].toString());
+//				detail.start();
+//				
+//				try {
+//					Thread.sleep(120000);
+//				} catch (InterruptedException e) {
+//					e.printStackTrace();
+//				}
+//			}
 			
 //			logger.info("跑前半部分标签...");
 //			for (int i = 0; i < Tags.tagList.length/2; i++) {

@@ -73,11 +73,15 @@ public class ToutiaoDetail implements PageProcessor {
 	    			String id = ToutiaoDetail.getId(page.getRequest().getUrl());
 	    			logger.info("id=" + id);
 	    			
+	    			logger.info("content=" + content);
+	    			
 	    			//处理详情内容图片，取出现的第一张，作为列表中显示
-	    			String imgs = page.getHtml().xpath("//p//img/@src").get().toString();
+	    			String imgs = page.getHtml().xpath("//img/@src").get().toString();
 	    			if(!StrUtil.null2Str(imgs).equals("")) {
 	    				imgs = imgs.substring(2, imgs.length() - 2);
 	    			}
+	    			
+	    			logger.info("imgs=" + imgs);
 	    			
 				ProcessData pData = new ProcessData();
 				pData.detailPage(id, content, client, imgs);;
@@ -171,16 +175,16 @@ public class ToutiaoDetail implements PageProcessor {
 		
 		//指定字段进行搜索
 //		QueryBuilder qb1 = termQuery("domain", tag);
-//		QueryBuilder qb1 = termQuery("id", "6478116421921407501");
+		QueryBuilder qb1 = termQuery("id", "6478111281814438413");
 //		QueryBuilder qb1 = termQuery("id", "6478081432441848334");
 //		QueryBuilder qb1 = termQuery("id", "6475498273632158222");
 //		QueryBuilder qb1 = termQuery("id", "6478162468488085773");
 		
 		
 		//组合查询搜索
-		QueryBuilder qb1 = boolQuery()
-				.must(termQuery("domain", tag)) 
-                .must(termQuery("flag", 1));
+//		QueryBuilder qb1 = boolQuery()
+//				.must(termQuery("domain", tag)) 
+//                .must(termQuery("flag", 1));
 		
 		//组合查询搜索
 //		QueryBuilder qb2 = boolQuery()
@@ -214,22 +218,23 @@ public class ToutiaoDetail implements PageProcessor {
 			String [] strArray = new String [(int) hits.getTotalHits()];
 			for (int i = 0; i < hits.getTotalHits(); i++) {
 				String id = hits.getAt(i).getSource().get("id").toString();
-//				String url = "https://m.toutiao.com/i" + hits.getAt(i).getSource().get("id") + "/info/";
-//				strArray[i] = url;
-//				logger.info("---------------");
-//				logger.info("id=" + id);
-//				logger.info("webPage=" + hits.getAt(i).getSource().toString());
-//				logger.info("不存在详情数据，添加抓取内容详情url=" + strArray[i]);
+				String url = "https://m.toutiao.com/i" + hits.getAt(i).getSource().get("id") + "/info/";
+				strArray[i] = url;
+				logger.info("---------------");
+				logger.info("id=" + id);
+				logger.info("webPage=" + hits.getAt(i).getSource().toString());
+				logger.info("不存在详情数据，添加抓取内容详情url=" + strArray[i]);
 				
 				String content = hits.getAt(i).getSource().get("content").toString();
 				content = content.replace(Utils.HTML_PREFIX, "");
 				content = content.replace(Utils.HTML_SUFFIX, "");
-				if(StrUtil.null2Str(content).equals("")) {
-					logger.info("tag=" + tag + "，缺失内容的文章id=" + id);
-					DeleteResponse result = client.prepareDelete("commons", "webpage", id).execute().actionGet();
-					RestStatus status = result.status();
-					System.out.println("tag=" + tag + "，status = " + status);
-				}
+				logger.info("content=" + content);
+//				if(StrUtil.null2Str(content).equals("")) {
+//					logger.info("tag=" + tag + "，缺失内容的文章id=" + id);
+//					DeleteResponse result = client.prepareDelete("commons", "webpage", id).execute().actionGet();
+//					RestStatus status = result.status();
+//					System.out.println("tag=" + tag + "，status = " + status);
+//				}
 			}
 			
 			logger.info("tag=" + tag + "================即将爬虫url详情内容的url列表==============");
@@ -252,11 +257,11 @@ public class ToutiaoDetail implements PageProcessor {
 				logger.info(string);
 			}
 			
-//			if(strArrayTmp.length > 0) {
-//				int finalReq = count>MainTest.THREAD_COUNT ? MainTest.THREAD_COUNT:count;
-//				logger.info("并发请求数：finalReq=" + finalReq);
-//				Spider.create(new ToutiaoDetail()).addUrl(strArrayTmp).thread(finalReq).run();
-//			}
+			if(strArrayTmp.length > 0) {
+				int finalReq = count>MainTest.THREAD_COUNT ? MainTest.THREAD_COUNT:count;
+				logger.info("并发请求数：finalReq=" + finalReq);
+				Spider.create(new ToutiaoDetail()).addUrl(strArrayTmp).thread(finalReq).run();
+			}
 			logger.info("tag=" + tag + "，获得数据完成");
 		}
 		long end=System.currentTimeMillis(); //获取结束时间
