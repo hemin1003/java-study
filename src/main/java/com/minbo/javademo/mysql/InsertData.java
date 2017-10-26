@@ -6,9 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.Random;
 
-import org.assertj.core.error.ShouldBeEqualToIgnoringFields;
-
-import com.sun.jersey.core.util.StringIgnoreCaseKeyComparator;
+import com.minbo.javademo.utils.ShareCodeUtil;
 
 public class InsertData {
 
@@ -85,18 +83,18 @@ public class InsertData {
 		return (int) (Math.random() * (end - start + 1) + start);
 	}
 
-	/**
-	 * 返回手机号码
-	 */
-	private static String[] telFirst = "130,131,132,155,156,133,134,157,158,35,136,137,138,139,150,151,152,159,153"
-			.split(",");
-
-	private static String getTelNum() {
-		int index = getNum(0, telFirst.length - 1);
-		String first = telFirst[index];
-		String second = String.valueOf(getNum(1, 888) + 10000*(new Random().nextInt(100))).substring(1);
-		String thrid = String.valueOf(getNum(1, 9100) + 10000*(new Random().nextInt(15))).substring(1);
-		return first + second + thrid;
-	}
+//	/**
+//	 * 返回手机号码
+//	 */
+//	private static String[] telFirst = "130,131,132,155,156,133,134,157,158,35,136,137,138,139,150,151,152,159,153"
+//			.split(",");
+//
+//	private static String getTelNum() {
+//		int index = getNum(0, telFirst.length - 1);
+//		String first = telFirst[index];
+//		String second = String.valueOf(getNum(1, 888) + 10000*(new Random().nextInt(100))).substring(1);
+//		String thrid = String.valueOf(getNum(1, 9100) + 10000*(new Random().nextInt(15))).substring(1);
+//		return first + second + thrid;
+//	}
 
 }
