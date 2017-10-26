@@ -2,6 +2,10 @@ package com.minbo.javademo.utils;
 
 import java.util.Random;
 
+/**
+ * 生成唯一验证码
+ * @author Minbo
+ */
 public class ShareCodeUtil {
 	
 	/** 自定义进制(0,1没有加入,容易与o,l混淆) */
@@ -70,6 +74,7 @@ public class ShareCodeUtil {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(toSerialCode(123123));
+		//比如通过手机号码生成唯一码
+		System.out.println(toSerialCode(18688888888L));
 	}
 }
