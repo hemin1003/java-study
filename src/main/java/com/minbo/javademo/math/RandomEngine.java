@@ -1,5 +1,6 @@
 package com.minbo.javademo.math;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
@@ -31,5 +32,21 @@ public class RandomEngine {
 		}
 
 		return null;
+	}
+	
+	/**
+	 * 获得值
+	 * @param keyChanceMap
+	 * @return
+	 */
+	public static String getRandomValue(Map<String, Integer> keyChanceMap) {
+		Map<String, Integer> count = new HashMap<String, Integer>();
+		String key = RandomEngine.chanceSelect(keyChanceMap);
+		if (count.containsKey(key)) {
+			count.put(key, count.get(key) + 1);
+		} else {
+			count.put(key, 1);
+		}
+		return key;
 	}
 }

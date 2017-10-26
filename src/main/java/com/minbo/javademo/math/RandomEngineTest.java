@@ -19,22 +19,16 @@ import java.util.Map;
  */
 public class RandomEngineTest {
 	public static void main(String[] args) {
+		//构建概率值
 		Map<String, Integer> keyChanceMap = new HashMap<String, Integer>();
-		keyChanceMap.put("50", 50);
-		keyChanceMap.put("100", 30);
-		keyChanceMap.put("200", 20);
-
+		//50出现概率70%，100出现概率20%，200出现概率10%
+		keyChanceMap.put("50", 70);
+		keyChanceMap.put("100", 20);
+		keyChanceMap.put("200", 10);
 		
 		for (int i = 0; i < 10; i++) {
-			Map<String, Integer> count = new HashMap<String, Integer>();
-			// print
-			String key = RandomEngine.chanceSelect(keyChanceMap);
-			if (count.containsKey(key)) {
-				count.put(key, count.get(key) + 1);
-			} else {
-				count.put(key, 1);
-			}
-			System.out.println(key);
+			String value = RandomEngine.getRandomValue(keyChanceMap);
+			System.out.println(value);
 		}
 	}
 }
