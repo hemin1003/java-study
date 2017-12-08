@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.expflow.reading" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.expflow.reading.app.App" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.expflow.reading.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.ExActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.ExRecordsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.DetailNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.SignInActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.RegisterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.AlterPasswordActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.HistoryNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.module.mine.view.IncomeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.expflow.reading.module.mine.view.PayoutActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.StudentsDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.StudentsInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.MySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.module.mine.view.PayoutDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.WebViewWithShareWxActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.WebViewWithDataActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.expflow.reading.activity.WebVideoActivityWithTuia" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.expflow.reading.activity.WebVideoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.expflow.reading.activity.QrcodeActivity" android:screenOrientation="portrait" android:theme="@style/transcutestyle"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.ManageWechatActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.ManageAlipayActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.ManagePhoneActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.module.invite.view.QrcodeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.module.mine.view.TasksActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.TabManagerNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.activity.TabManagerVideosActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.expflow.reading.module.mine.view.FeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.expflow.reading.wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleTask" android:name="com.umeng.qq.tencent.AuthActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="tencent101417685"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.umeng.qq.tencent.AssistActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.umeng.socialize.media.WBShareCallBackActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.qq.e.comm.DownloadService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.qq.e.ads.ADActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.sina.weibo.sdk.share.WbShareTransActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.expflow.reading.activity.TasksHallActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.expflow.reading.activity.InviteActivity"/>
+        <activity android:name="com.expflow.reading.activity.AwardRuleActivity"/>
+        <meta-data android:name="YFAXInstallChannel" android:value="YYB"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="59e00cee717c195ab2000015"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="YYB"/>
+        <meta-data android:name="TencentMapSDK" android:value="QUEBZ-2NH3S-S6DOL-6J32S-L5JO2-O7FYD"/>
+        <receiver android:exported="true" android:name="com.expflow.reading.base.MessageReceiver">
+            <intent-filter>
+                <action android:name="com.tencent.android.tpush.action.PUSH_MESSAGE"/>
+                <action android:name="com.tencent.android.tpush.action.FEEDBACK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.expflow.reading.base.NormalLaunchReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.intent.action.ANY_DATA_STATE"/>
+                <action android:name="android.provider.Telephony.GSM_SMS_RECEIVED"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.expflow.reading.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="TA_APPKEY" android:value="AWSAD2BW119L"/>
+        <meta-data android:name="InstallChannel" android:value="YYB"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:name="com.tencent.bugly.beta.ui.BetaActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.expflow.reading.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.tencent.bugly.beta.utils.BuglyFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.tencent.bugly.beta.tinker.TinkerResultService"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_03"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_04"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_05"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_06"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_07"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_08"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_09"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_00_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_01_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$STDStub_02_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_03"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_04"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_05"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_06"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_07"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_08"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_09"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_00_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_01_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTop" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTStub_02_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_03"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_04"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_05"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_06"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_07"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_08"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_09"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_00_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_01_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleTask" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SGTKStub_02_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_03"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_04"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_05"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_06"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_07"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_08"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_09"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_00_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_01_T" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:launchMode="singleInstance" android:name="com.tencent.tinker.loader.hotplug.ActivityStubs$SIStub_02_T" android:theme="@android:style/Theme.Translucent"/>
+        <meta-data android:name="tinker_version" android:value="1.9.1"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.TinkerPatchService$InnerService" android:process=":patch"/>
+        <service android:exported="false" android:name="com.tencent.tinker.lib.service.DefaultTinkerResultService"/>
+        <activity android:exported="false" android:name="com.tencent.android.tpush.XGPushActivity" android:theme="@android:style/Theme.Translucent">
+            <intent-filter>
+                <action android:name="android.intent.action"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.tencent.android.tpush.XGPushReceiver" android:process=":xg_service_v3">
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="com.tencent.android.tpush.action.SDK"/>
+                <action android:name="com.tencent.android.tpush.action.INTERNAL_PUSH_MESSAGE"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+            <intent-filter android:priority="0x7FFFFFFF">
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_CHECKING"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.tencent.android.tpush.rpc.XGRemoteService">
+            <intent-filter>
+                <action android:name="com.expflow.reading.PUSH_ACTION"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.tencent.android.tpush.service.XGPushServiceV3" android:persistent="true" android:process=":xg_service_v3"/>
+        <service android:name="com.tencent.android.tpush.service.XGDaemonService" android:process=":xg_service_v3"/>
+        <provider android:authorities="com.expflow.reading.AUTH_XGPUSH" android:exported="true" android:name="com.tencent.android.tpush.XGPushProvider"/>
+        <provider android:authorities="com.expflow.reading.TPUSH_PROVIDER" android:exported="false" android:name="com.tencent.android.tpush.SettingsContentProvider"/>
+        <meta-data android:name="XG_V2_ACCESS_ID" android:value="2100266505"/>
+        <meta-data android:name="XG_V2_ACCESS_KEY" android:value="A1EK5ZTJ614L"/>
+        <provider android:authorities="com.expflow.reading.TENCENT.MID.V3" android:exported="true" android:name="com.tencent.mid.api.MidProvider"/>
+        <activity android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.activity.TTLandingPageActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.bytedance.sdk.openadsdk.activity.TTDownloadDeleteActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:name="com.bytedance.sdk.openadsdk.service.TTDownloadService"/>
+        <service android:name="com.bytedance.sdk.openadsdk.service.TTDownloadHandlerService"/>
+    </application>
+</manifest>
+
+

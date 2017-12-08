@@ -1,0 +1,27 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: app-debug-120601.apk
+compressionType: false
+doNotCompress:
+- arsc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '25'
+sharedLibrary: false
+unknownFiles:
+  com/androidquery/util/web_image.html: '8'
+  org/jsoup/nodes/entities-base.properties: '8'
+  org/jsoup/nodes/entities-full.properties: '8'
+  org/jsoup/nodes/entities-xhtml.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '13'
+  versionName: 2.2.1
+
