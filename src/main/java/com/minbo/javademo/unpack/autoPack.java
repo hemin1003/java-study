@@ -28,7 +28,7 @@ public class autoPack {
 		long startTime = System.currentTimeMillis();
 		System.out.println("启动打包程序");
 		System.out.println();
-		Runtime.getRuntime().exec("rm -rf package/*.*");
+//		Runtime.getRuntime().exec("rm -rf package/*.*");
 		
 		try {
 			String desc = "desc.txt";
@@ -181,7 +181,7 @@ public class autoPack {
 		System.out.println("运行时间：" + (endTime - startTime)/1000 + " s");
 		
 		Thread.sleep(300);
-		Runtime.getRuntime().exec("rm -rf package/" + unSignFile);
+//		Runtime.getRuntime().exec("rm -rf package/" + unSignFile);
 	}
 	
 	/**
